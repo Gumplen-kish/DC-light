@@ -1,0 +1,37 @@
+mixin button(props = {})
+  -
+    const {isLink, href, type, color, text, iconData, round} = props;
+    const {position, name, width, height} = iconData ? iconData : ``;
+
+  if (isLink)
+    a.button(
+      class!=`${color ? `button--${color}` : `button--gray`} ${round ? `button--round` : ``}`,
+      href!= href ? href : `#`
+
+    )&attributes(attributes)
+      if (position === `first`)
+        +icon(name, width, height).button__icon-first
+
+      span!= text ? text : ``
+
+      if (position === `last`)
+        +icon(name, width, height).button__icon-last
+
+      if (position === `center`)
+        +icon(name, width, height)
+  else
+    button.button(
+        class!=`${color ? `button--${color}` : `button--gray`} ${round ? `button--round` : ``}`,
+        type!= type ? type : `button`
+      )&attributes(attributes)
+      if (position === `first`)
+        +icon(name, width, height).button__icon-first
+
+      span!= text ? text : ``
+
+      if (position === `last`)
+        +icon(name, width, height).button__icon-last
+
+      if (position === `center`)
+        +icon(name, width, height)
+

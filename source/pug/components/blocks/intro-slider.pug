@@ -1,0 +1,67 @@
+mixin intro-slider(options = {})
+  .container.intro-slider__background
+    .intro-slider__wrap-sliders-bg
+      .intro-slider__background__wrap
+        picture
+          <source  media="(max-width: 576px)" srcset="img/content/background-slide_sm.png" srcset="img/content/background-slide_sm@2x.png">
+          <source  media="(max-width: 768px)" srcset="img/content/background-slide_md.png" srcset="img/content/background-slide_md@2x.png">
+          <source  srcset="img/content/background-slide.png" srcset="img/content/background-slide.png@2x.png">
+          <img src="img/content/background-slide.png" alt="Светильник-фон слайдера" width="915" height="480">
+          
+        .intro-slider.swiper
+          .intro-slider__wrap.swiper-wrapper
+            each item in options.slides
+              .intro-slider__item.swiper-slide
+                .intro-slider__content
+                  .intro-slider__header-text
+                    p=item.text
+                    case item.status
+                      when 1
+                        span.intro-slider__span.intro-slider__span--stock Акция
+                      when 2
+                        span.intro-slider__span.intro-slider__span--hit Хит
+                      when 3
+                        span.intro-slider__span.intro-slider__span--new Новинка
+                      when 4
+                        span.intro-slider__span.intro-slider__span--profitably Выгодно
+                  h3=item.title
+                  .intro-slider__price
+                    span!=item.price 
+                  .intro-slider__description
+                    p=item.description
+
+                  .intro-slider__button-wrap
+                    +button({
+                      color: "color-tangerine-yellow",
+                      isLink:"#",
+                      text: "Подробнее"
+                    }).intro-slider__button
+
+                    .intro-slider__button-nav
+                      +button({
+                        color: "intro-slider-nav",
+                        iconData: {
+                          position: "center",
+                          name: "icon-arrowleft",
+                          width: 24,
+                          height: 24,
+                        } 
+                      })(aria-label="Предыдущий слайд").intro-slider__prev
+                        
+                      +button({
+                        color: "intro-slider-nav",
+                        iconData: {
+                          position: "center",
+                          name: "icon-arrowright",
+                          width: 24,
+                          height: 24,
+                        } 
+                      })(aria-label="Следующий слайд").intro-slider__next
+    
+    .intro-slider__product-slider.product-slider
+      .product-slider__swiper.swiper
+        .product-slider__wrap.swiper-wrapper
+          each elem, index in productDataSlider
+            .product-slider__item.swiper-slide
+              +product-small(productDataSlider)
+

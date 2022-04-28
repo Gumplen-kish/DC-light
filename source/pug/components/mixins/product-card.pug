@@ -1,0 +1,60 @@
+mixin product-small(options={})
+  each item in options.card
+    a(href=item.href aria-label=`Перейти на страницу ${item.name}`)
+      .product-small
+        .product-small__wrap-img
+          +img("product", item.img, "png", 245, 170, "Фото продукта")
+          case item.status
+            when 1
+              span.product-small__span.intro-slider__span.intro-slider__span--stock Акция
+            when 2
+              span.product-small__span.intro-slider__span.intro-slider__span--hit Хит
+            when 3
+              span.product-small__span.intro-slider__span.intro-slider__span--new Новинка
+            when 4
+              span.product-small__span.intro-slider__span.intro-slider__span--profitably Выгодно
+        span.product-small__span-lk=item.lk 
+        h3=item.name 
+        .product-small__rating
+          ul.product-small__list-star
+            li.product-card__star.product-card__star--blue
+              +icon('icon-star', 14, 13)
+            li.product-card__star.product-card__star--blue
+              +icon('icon-star', 14, 13)
+            li.product-card__star.product-card__star--blue
+              +icon('icon-star', 14, 13)
+            li.product-card__star.product-card__star--half
+              +icon('icon-starhalf', 14, 13)
+            li.product-card__star.product-card__star-gray
+              +icon('icon-stargray', 14, 13)
+          span.product-small__span-raiting 4.05
+        .product-small__characteristic
+          dl
+            dt Размеры
+            div
+            dd=item.size
+          dl
+            dt Мощность
+            div
+            dd=item.capacity
+          dl
+            dt Температура
+            div
+            dd=item.temp
+        .product-small__price
+          span.product-small__price__new=item.newPrice
+          span.product-small__price__old=item.oldPrice
+        .product-small__button-wrap
+          +button({
+            color: "color-tangerine-yellow",
+            text: "В корзину"
+          }).product-small__button-wrap__button-cart
+
+          +button({
+            iconData: {
+              position: "center",
+              name: "icon-flag",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="В избранное").product-small__button-wrap__button-favourites

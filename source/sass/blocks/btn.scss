@@ -1,0 +1,114 @@
+.btn,
+.button {
+  display: inline-flex;
+  padding: 10px 20px;
+  border: none;
+  white-space: nowrap;
+  font-family: $ff-manrope;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: $color-maire;
+
+
+  &--color-tangerine-yellow {
+    padding: 18px 40px;
+    font-size: 16px;
+    line-height: 26px;
+    align-items: center;
+    background-color: $color-tangerine-yellow;
+    color: $color-maire;
+
+    &:hover {
+      background-color: $color-selective-yellow;
+      transition: background-color 0.6s ease;
+    }
+  }
+
+
+  &__icon-first {
+    margin-right: 10px;
+  }
+
+  &__icon-last {
+    margin-left: 15px;
+  }
+
+  &--color-ghost-white {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $color-ghost-white;
+
+    & svg {
+      fill: $color-selective-yellow;
+    }
+
+    &:hover,
+    &:disabled {
+      background-color: $color-whisper;
+      transition: background-color 0.6s ease;
+
+      & svg {
+        fill: $color-dim-gray;
+        transition: fill 0.6s ease;
+      }
+    }
+
+    &:focus {
+      background-color: $color-default-white;
+      transition: background-color 0.6s ease;
+
+      & svg {
+        fill: $color-selective-yellow;
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  //- Кнопки навигации слайдера Intro
+  &--intro-slider-nav {
+    &:hover {
+      background-color: $color-selective-yellow;
+      transition: background-color 0.6s ease;
+
+      & svg {
+        fill: $color-maire;
+        transition: fill 0.6s ease;
+      }
+    }
+
+    &:focus {
+      background-color: $color-default-white;
+      transition: background-color 0.6s ease;
+      outline: none;
+
+      & svg {
+        fill: $color-maire;
+        transition: fill 0.6s ease;
+      }
+    }
+
+    &:disabled {
+      background-color: $color-maire;
+      transition: background-color 0.6s ease;
+
+      & svg {
+        fill: $color-default-white;
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+
+  //- Кнопки карточки продукта в стилях карточки продукта
+}
+
+

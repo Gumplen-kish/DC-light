@@ -1,0 +1,148 @@
+.header {
+  &__logo {
+    color: $color-default-white;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include vp-1024 {
+      gap: 34px;
+    }
+  }
+
+
+  &__search {
+    height: 52px;
+    flex: 1;
+    margin-left: 34px;
+
+    @include vp-1024 {
+      margin-left: 0;
+    }
+  }
+
+  &__button-wrap {
+    display: flex;
+    gap: 20px;
+
+    [aria-label="Корзина"] {
+      position: relative;
+      & span {
+        left: 48px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        
+        align-items: center;
+        color: $color-default-white;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 30px;
+
+    @include vp-1024 {
+      margin: 0;
+    }
+
+    @include vp-993 {
+      display: none;
+    }
+
+    &:hover {
+      & a {
+        color: $color-tangerine-yellow;
+        transition: color 0.6s ease;
+      }
+
+      & svg {
+        fill: $color-tangerine-yellow;
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+
+  &__contacts-phone {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    & a {
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: $color-maire;
+    }
+    
+    & p {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $color-dim-gray;
+    }
+  }
+
+  &__contacts-icon {
+    fill: $color-maire;
+  }
+}
+
+//Черная полоска Каталога
+.header-catalog {
+  background-color: $color-maire;
+  margin-top: 22px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    @include vp-1735 {
+      gap: 60px;
+    }
+
+    @include vp-1440 {
+      gap: 37px;
+    }
+
+    @include vp-1280 {
+      gap: 30px;
+    }
+
+    @media(max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    padding: 26px 45px 22px 41px;
+
+    @include vp-1440 {
+      padding: 22px 30px;
+    }
+  }
+}
+
+

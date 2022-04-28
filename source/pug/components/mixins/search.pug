@@ -1,0 +1,5 @@
+mixin search(id)
+  form.search(method="get", action="#", class!=attributes.class)
+    input(type="search", placeholder="Поиск", id= id ? id : "input-search").search__input
+    label(for= id ? id : "input-search").search__icon
+      +icon("icon-search", 16, 16)

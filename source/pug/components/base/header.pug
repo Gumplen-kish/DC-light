@@ -1,0 +1,185 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "О компании"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+      {
+        href: "#",
+        text: "Сотрудничество"
+      },
+      {
+        href: "#",
+        text: "Доставка и оплата"
+      },
+      {
+        href: "#",
+        text: "Монтаж"
+      },
+    ]
+
+  header.header(class=headerMods)
+    
+      nav.header__main-nav.main-nav
+        .container.main-nav__wrap
+          button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+            +icon("icon-burger", 20, 20)
+          .main-nav__wrapper
+            ul.main-nav__list
+              each link in headerLinks
+                - const activeState = currentUrl === link.href
+                li.main-nav__item
+                  if(activeState)
+                    span.main-nav__link.is-active=link.text
+                  else
+                    a.main-nav__link(href=link.href)=link.text
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Санкт-Петербург",
+            iconData: {
+              position: "last",
+              name: "icon-arrowbottom",
+              width: 8,
+              height: 14
+            } 
+          })
+      .container.header__wrap
+        if(currentUrl === "index.html")
+          +img("content", "logo", "png", 191, 67, "Логотип просзводства светильников")
+        else
+          a.header__logo(href="index.html", aria-label="Переход на главную") 
+            +img("content", "logo", "png", 191, 67, "Логотип просзводства светильников")
+        +custom-input({inputPlaceholder: "Поиск", iconSearch: true}).header__search
+        .header__contacts
+          +icon('icon-phone', 24, 24).header__contacts-icon
+          .header__contacts-phone
+            a(href="tel:+7 (812) 999-12-86") +7 (812) 999-12-86
+            p dc-light.ru
+        .header__button-wrap
+          +button({
+            color: "color-ghost-white",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-flag",
+              width: 24,
+              height: 24,
+            }
+          })
+          +button({
+            color: "color-ghost-white",
+            isLink: true,
+            text: 5,
+            iconData: {
+              position: "center",
+              name: "icon-cart",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="Корзина")
+          +button({
+            color: "color-ghost-white",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-user",
+              width: 24,
+              height: 24,
+            }
+          })
+      .header__catalog.header-catalog
+        .container.header-catalog__container
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Каталог",
+            iconData: {
+              position: "first",
+              name: "icon-catalog",
+              width: 24,
+              height: 24,
+            }
+          }).header-catalog__button
+
+
+          +custom-select({
+              optionsList: [
+                {text: "Линейные", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name1", data-id="id-example1").custom-select
+
+          +custom-select({
+              optionsList: [
+                {text: "Кольца", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name2", data-id="id-example2").custom-select
+          
+          +custom-select({
+              optionsList: [
+                {text: "Круги", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name3", data-id="id-example3").custom-select
+          
+          +custom-select({
+              optionsList: [
+                {text: "Квадраты", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name4", data-id="id-example4").custom-select
+
+          +custom-select({
+              optionsList: [
+                {text: "Треугольные", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name5", data-id="id-example5").custom-select
+          
+          +custom-select({
+              optionsList: [
+                {text: "Фигурные", value: "id-1", isActive: true}, 
+                {text: "Гибкий неон LP/LN", value: "id-2"}, 
+                {text: "Гибкий неон ARL", value: "id-3"}, 
+                {text: "Двусторонний", value: "id-4"}, 
+                {text: "В форме D", value: "id-5"}, 
+                {text: "Круглый 360º", value: "id-6"},
+                {text: "С белой оболочкой", value: "id-7"},
+                {text: "С цветной оболочкой", value: "id-8"}
+              ]
+            })(data-select, data-validate-type="select", data-name="some-name6", data-id="id-example6").custom-select
