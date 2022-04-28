@@ -1,0 +1,8 @@
+mixin production-lamp()
+  .container
+    +section-wrap(`Производство светодио&shy;дных светильников`, "По индвидуальным размерам").production-lamp
+      ul.production-lamp__list
+        each elem, index in productionList
+          li.production-lamp__item
+            +img("production", `${elem.img}`, "png", 285, 220, `${elem.name}`)
+            p= elem.name

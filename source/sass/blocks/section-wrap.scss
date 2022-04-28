@@ -1,0 +1,29 @@
+.section-wrap {
+  @include vp-576 {
+    text-align: center;
+  }
+
+  & h2 {
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: $color-maire;
+
+    @include vp-576 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  & span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-dim-gray;
+  }
+}
