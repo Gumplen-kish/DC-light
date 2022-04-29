@@ -1,7 +1,6 @@
 import Swiper, {Navigation, Pagination} from 'swiper';
 import '../../vendor/swiper';
 const initSwiperMain = () => {
-  console.log("Я тут и был");
   const swiper = new Swiper('.intro-slider', {
     modules: [Navigation, Pagination],
     direction: 'horizontal',
@@ -15,7 +14,6 @@ const initSwiperMain = () => {
 };
 
 const initSliderHit = () => {
-  console.log("Я заработал");
   const swiper = new Swiper('.product-card-slider__swiper', {
     modules: [Navigation, Pagination],
     direction: 'horizontal',

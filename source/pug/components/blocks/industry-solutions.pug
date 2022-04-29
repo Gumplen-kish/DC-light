@@ -1,0 +1,12 @@
+mixin industry-solutions()
+  .industry-solutions
+    .container
+      +section-wrap("Отраслевые решения", "Решения для вашего бизнеса")
+        ul.industry-solutions__list
+          each elem, index in industryList
+            li.industry-solutions__item
+              +img("industry", `${elem.img}`, "png", 285, 350, `${elem.name}`)
+              +button({
+                color: "color-tangerine-yellow",
+                text: elem.button,
+              }).industry-solutions__button

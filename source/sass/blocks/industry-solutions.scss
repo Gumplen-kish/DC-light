@@ -1,0 +1,35 @@
+.industry-solutions {
+  padding-top: 1px;
+  background-color: $color-white;
+
+  &__list {
+    display: flex;
+    gap: 30;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 285px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:last-child button {
+      max-width: 172px;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 12px 24px;
+    border-radius: 4px;
+  }
+}
