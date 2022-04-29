@@ -1,20 +1,4 @@
 .production-lamp {
-  margin-top: 70px;
-  font-family: $ff-manrope;
-
-  @include vp-1024 {
-    margin-top: 50px;
-  }
-
-  @include vp-992 {
-    margin-top: 40px;
-  }
-
-  @include vp-768 {
-    margin-top: 40px;
-  }
-
-
   &__list {
     display: grid;
     grid-template-columns: auto auto auto auto;

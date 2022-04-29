@@ -1,0 +1,11 @@
+mixin product-card-slider 
+  .container 
+    +section-wrap(`Хиты продаж`,"Популярные товары").product-card-slider
+      .product-card-slider__swiper.swiper
+        ul.product-card-slider__list.swiper-wrapper
+          each elem, index in productDataSliderHit
+            li.production-lamp__item
+              +product-small(productDataSlider)
+
+
+

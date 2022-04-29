@@ -1,4 +1,19 @@
 .section-wrap {
+  margin-top: 70px;
+  font-family: $ff-manrope;
+
+  @include vp-1024 {
+    margin-top: 50px;
+  }
+
+  @include vp-992 {
+    margin-top: 40px;
+  }
+
+  @include vp-768 {
+    margin-top: 40px;
+  }
+
   @include vp-576 {
     text-align: center;
   }
@@ -19,11 +34,25 @@
     }
   }
 
-  & span {
+  & p {
+    margin-top: 0;
+    margin-bottom: 55px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: $color-dim-gray;
+
+    @include vp-1024 {
+      margin-bottom: 45px;
+    }
+  
+    @include vp-992 {
+      margin-bottom: 40px;
+    }
+  
+    @include vp-768 {
+      margin-bottom: 30px;
+    }
   }
 }
