@@ -3,25 +3,83 @@
   background-color: $color-white;
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     gap: 30;
-    justify-content: space-between;
+
+    @include vp-1280 {
+      grid-template-columns: auto auto;
+      gap: 30;
+      row-gap: 30px;
+    }
+
+    @include vp-576 {
+      grid-template-columns: auto;
+    }
   }
 
   &__item {
     position: relative;
     width: 285px;
 
+    @include vp-1280 {
+      width: 450px;
+      height: 250px;
+    }
+
+    @include vp-992 {
+      width: 330px;
+      height: 250px;
+    }
+
+    @include vp-768 {
+      width: 240px;
+      height: 290px;
+    }
+
+    @include vp-576 {
+      width: 100%;
+      height: 230px;
+    }
+
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 6px;
     }
 
     &:last-child button {
       max-width: 172px;
       width: 100%;
-      text-align: left;
+
+      @include vp-1280 {
+        max-width: 263px;
+      }
+
+      @include vp-768 {
+        width: 83%;
+      }
+
+      @include vp-576 {
+        max-width: 172px;
+      }
+    }
+
+    &:nth-child(2) {
+      & button {
+        & br {
+          display: none;
+
+          @include vp-768 {
+            display: block;
+          }
+
+          @include vp-576 {
+            text-align: center;
+          }
+        }
+      }
     }
   }
 
@@ -31,5 +89,24 @@
     bottom: 20px;
     padding: 12px 24px;
     border-radius: 4px;
+    text-align: left;
+
+    @include vp-768 {
+      max-width: 83%;
+    }
+
+    @include vp-576 {
+      text-align: center;
+    }
+
+    & br {
+      @include vp-1280 {
+        display: none;
+      }
+
+      @include vp-768 {
+        display: block;
+      }
+    }
   }
 }
