@@ -1,0 +1,21 @@
+.map {
+  position: relative;
+
+  & img {
+    width: 100%;
+    object-fit: fill;
+    height: 640px;
+
+    @include vp-1280 {
+      height: 495px;
+    }
+
+    @include vp-768 {
+      height: 550px;
+    }
+
+    @include vp-576 {
+      height: 360px;
+    }
+  }
+}
