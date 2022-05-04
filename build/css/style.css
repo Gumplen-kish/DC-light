@@ -1514,6 +1514,81 @@ button,
   padding: 0 345px;
 }
 
+.bread-crumbs {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 30px 0 0;
+  position: relative;
+}
+
+.bread-crumbs::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: red;
+}
+
+.bread-crumbs__it {
+  position: relative;
+  margin-right: 8px;
+}
+
+.bread-crumbs__it:last-child {
+  margin-right: 0;
+}
+
+.bread-crumbs__it a {
+  display: block;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  color: #bdbdbd;
+  padding: 3px 8px 3px 0;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.bread-crumbs__it a:active {
+  color: #121211;
+}
+
+.bread-crumbs__it::after {
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.33;
+  content: "/";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 3px;
+  color: #bdbdbd;
+}
+
+.bread-crumbs__it--active a {
+  font-weight: 500;
+  color: #121211;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bread-crumbs__it--active::after {
+  display: none;
+}
+
 .about-company {
   margin-bottom: 140px;
 }
@@ -2942,6 +3017,7 @@ div.footer__content__social-list a:hover svg {
   overflow: hidden;
   opacity: 1;
   color: #747474;
+  z-index: 2;
 }
 
 .custom-select.is-open .custom-select__icon {
@@ -3405,6 +3481,13 @@ div.footer__content__social-list a:hover svg {
   color: #747474;
 }
 
+.recently-card-slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
 .industry-solutions {
   padding-top: 1px;
   background-color: #fdfdfd;
@@ -3455,6 +3538,20 @@ div.footer__content__social-list a:hover svg {
     color: $color-default-white;
   }
 } */
+
+@media (hover: hover), screen and (min-width: 0) {
+  .bread-crumbs__it a:hover,
+  .bread-crumbs__it a:focus {
+    outline: none;
+    color: #ffb800;
+  }
+
+  .bread-crumbs__it--active a:hover,
+  .bread-crumbs__it--active a:focus,
+  .bread-crumbs__it--active a:active {
+    color: #121211;
+  }
+}
 
 @media (hover: hover), screen and (min-width: 0\0) {
   .custom-select__item[aria-selected="true"]:hover,
@@ -3599,6 +3696,11 @@ div.footer__content__social-list a:hover svg {
 }
 
 @media (max-width: 1023px) {
+  .bread-crumbs {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
   .about-company__content p {
     width: 883px;
   }
@@ -3771,6 +3873,12 @@ div.footer__content__social-list a:hover svg {
 }
 
 @media (max-width: 767px) {
+  .bread-crumbs {
+    padding-top: 9px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .about-company {
     margin-bottom: 30px;
   }

@@ -1,0 +1,13 @@
+mixin bread-crumbs(links)
+  - var len=links.length -1
+  div.container.container--no-padding-tm
+    ol.bread-crumbs&attributes(attributes)
+      li.bread-crumbs__it
+        a(href="index.html") Главная
+      - var i = 0
+      while i < len
+        li.bread-crumbs__it
+          a(href=links[i].href)=links[i].title
+          -i++
+      li.bread-crumbs__it.bread-crumbs__it--active
+        a()=links[i].title

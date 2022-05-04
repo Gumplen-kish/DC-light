@@ -181,6 +181,7 @@
       overflow: hidden;
       opacity: 1;
       color: $color-dim-gray;
+      z-index: 2;
 
       @include vp-1280 {
         width: 100%;

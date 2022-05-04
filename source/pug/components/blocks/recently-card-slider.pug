@@ -1,0 +1,8 @@
+mixin recently-card-slider(options = {})
+  .container 
+    +section-wrap("Недавно смотрели","Не забыли об этом товаре?").recently-card-slider
+      .recently-card-slider__swiper.swiper
+        ul.recently-card-slider__list.swiper-wrapper
+          each elem, index in productDataSliderRecently
+            li.recently-card-slider__item
+              +product-small(productDataSliderRecently)
