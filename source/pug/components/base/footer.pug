@@ -1,3 +1,51 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
-    .container
+    .container.footer__container
+      .footer__content
+    .footer__copyright
+      .footer__copyright__container.container
+        .footer__copyright__text
+          p © 2022 Все права защищены
+          a Политикa конфиденциальности
+        .footer__copyright__social-list
+          +button({
+            color: "$color-tangerine-yellow",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-vk",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="Перейти на страницу Вконтакте").footer__copyright__social-list__button
+          +button({
+            color: "$color-tangerine-yellow",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-instagram",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="Instagramm").footer__copyright__social-list__button
+          +button({
+            color: "$color-tangerine-yellow",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-whatsapp",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="Whatsapp").footer__copyright__social-list__button
+          +button({
+            color: "$color-tangerine-yellow",
+            isLink: true,
+            iconData: {
+              position: "center",
+              name: "icon-telegram",
+              width: 24,
+              height: 24,
+            }
+          })(aria-label="Telegram").footer__copyright__social-list__button
+

@@ -1,5 +1,100 @@
 .footer {
   padding: 40px 0;
 
-  background-color: $color-neon-blue;
+  &__copyright {
+    background-color: $color-maire;
+
+    @include vp-768 {
+      display: flex;
+      align-items: center;
+    }
+
+    &__container {
+      padding-top: 37px;
+      padding-bottom: 35px;
+
+      @include vp-1280 {
+        padding-top: 26px;
+        padding-bottom: 24px;
+      }
+
+      @include vp-768 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 22px;
+      }
+
+      @include vp-576 {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $color-default-white;
+  
+      @include vp-768 {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        
+      }
+  
+      @include vp-576 {
+        order: 2;
+      }
+  
+      & a {
+        line-height: 18px;
+        font-size: 14px;
+        color: $color-default-white;
+      }
+  
+      p {
+        margin: 0;
+        margin-bottom: 5px;
+        line-height: 20px;
+        font-size: 15px;
+        color: $color-default-white;
+      }
+    }
+  }
+}
+
+div.footer__copyright__social-list {
+  display: none;
+  gap: 15px;
+
+  @include vp-768 {
+    display: flex;
+  }
+
+  @include vp-576 {
+    order: 1;
+    gap: 20px;
+    margin-bottom: 19px;
+  }
+  
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $color-tangerine-yellow;
+    padding: 0;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      fill: $color-maire;
+    }
+  }
 }
