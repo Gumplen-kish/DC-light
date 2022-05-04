@@ -1,6 +1,6 @@
 mixin section-wrap(title, span)
   section.section-wrap&attributes(attributes)
     h2!=title
-    p!=span
+    p.section-wrap__text!=span
     if block 
       block

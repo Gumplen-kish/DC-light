@@ -1,10 +1,19 @@
 .map {
   position: relative;
 
+  div.map__container {
+    @include vp-576 {
+      background-color: $color-ghost-white;
+      padding: 30px 0 30px 0; 
+    }
+  }
+
   & img {
+    position: relative;
     width: 100%;
     object-fit: fill;
     height: 640px;
+    z-index: 1;
 
     @include vp-1280 {
       height: 495px;
@@ -16,6 +25,131 @@
 
     @include vp-576 {
       height: 360px;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    content: "";
+    top: 70px;
+    
+    display: flex;
+    gap: 30px;
+    z-index: 2;
+
+    @include vp-1440 {
+      flex-direction: column;
+      gap: 0;
+      border-radius: 4px;
+      background-color: $color-default-white;
+    }
+
+    @include vp-768 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: $color-transparent;
+    }
+
+    @include vp-576 {
+      position: relative;
+      top: 0;
+      flex-direction: column;
+      width: 100%;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 285px;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px 23px 20px;
+    background-color: $color-default-white;
+    border-radius: 4px;
+
+    @include vp-1440 {
+      border-radius: 0;
+    }
+
+    @include vp-768 {
+      width: 240px;
+      border-radius: 4px;
+    }
+
+    @include vp-576 {
+      width: 100%;
+      max-width: 290px;
+    }
+
+    &--phone {
+      &:hover {
+        & a {
+          color: $color-tangerine-yellow;
+          transition: color 0.6s ease;
+        }
+  
+        & svg {
+          fill: $color-tangerine-yellow;
+          transition: fill 0.6s ease;
+        }
+      }
+    }
+
+    &--mail {
+      &:hover {
+        & a {
+          color: $color-tangerine-yellow;
+          transition: color 0.6s ease;
+        }
+  
+        & svg {
+          fill: $color-tangerine-yellow;
+          transition: fill 0.6s ease;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-selective-yellow;
+
+    &--phone {
+      fill: $color-maire;
+    }
+
+    &--envelope {
+      fill: $color-maire;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    & span {
+      font-size: 14px;
+      line-height: 24px;
+      font-style: 400;
+      color: $color-dim-gray;
+      
+    }
+
+    & p {
+      margin-top: 0;
+      margin-bottom: 4px;
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-maire;
+    }
+
+    & a {
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-maire;
     }
   }
 }

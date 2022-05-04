@@ -7,3 +7,26 @@ mixin map()
       <source  media="(max-width: 1280px)" srcset="img/map/map_992.png" srcset="img/map/map_992@2x.png">
       <source  srcset="img/map/map.png" srcset="img/map/map@2x.png">
       <img src="img/map/map.png" alt="Карта с адресом компании: Москва, Соколово Мещерская ул., 14, 11" width="100%" height="640">
+    .container.map__container
+      ul.map__list
+        li.map__item
+          +icon("icon-watch", 24, 24).map__icon.map__icon--watch
+          .map__text
+            span График работы
+            p Пн.-Вс.: с 9:00 до 21:00  
+
+        li.map__item
+          +icon("icon-flag", 24, 24).map__icon.map__icon--flag
+          .map__text
+            span Как нас найти
+            p Москва, Соколово Мещерская ул., 14, 11  
+        li.map__item.map__item--mail
+          +icon("Icon-envelope", 24, 24).map__icon.map__icon--envelope
+          .map__text
+            span Написать нам
+            a(href="mailto: dc-light.ru") dc-light.ru
+        li.map__item.map__item--phone
+          +icon("icon-phone", 24, 24).map__icon.map__icon--phone
+          .map__text
+            span Наш телефон
+            a(href="tel:+7 (812) 999-12-86") +7(812) 999-12-86
