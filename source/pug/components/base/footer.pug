@@ -2,6 +2,111 @@ mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container.footer__container
       .footer__content
+        .footer__content__logo
+          if(currentUrl === "index.html")
+            +img("content", "logo", "png", 191, 67, "Логотип просзводства светильников")
+          else
+            a.header__logo(href="index.html", aria-label="Переход на главную") 
+              +img("content", "logo", "png", 191, 67, "Логотип просзводства светильников")
+          p Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения.
+          .footer__content__social-list
+            +button({
+              color: "$color-tangerine-yellow",
+              isLink: true,
+              iconData: {
+                position: "center",
+                name: "icon-vk",
+                width: 24,
+                height: 24,
+              }
+            })(aria-label="Перейти на страницу Вконтакте").footer__copyright__social-list__button.footer__content__social-list__button
+            +button({
+              color: "$color-tangerine-yellow",
+              isLink: true,
+              iconData: {
+                position: "center",
+                name: "icon-instagram",
+                width: 24,
+                height: 24,
+              }
+            })(aria-label="Instagramm").footer__copyright__social-list__button.footer__content__social-list__button
+            +button({
+              color: "$color-tangerine-yellow",
+              isLink: true,
+              iconData: {
+                position: "center",
+                name: "icon-whatsapp",
+                width: 24,
+                height: 24,
+              }
+            })(aria-label="Whatsapp").footer__copyright__social-list__button.footer__content__social-list__button
+            +button({
+              color: "$color-tangerine-yellow",
+              isLink: true,
+              iconData: {
+                position: "center",
+                name: "icon-telegram",
+                width: 24,
+                height: 24,
+              }
+            })(aria-label="Telegram").footer__copyright__social-list__button.footer__content__social-list__button
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Перезвонить",
+          }).footer__content__logo__button
+        .footer__content__catalog.footer__catalog
+          .footer__content__wrap-list.footer__catalog__wrap-list
+            h3!=titleProductList
+            ul.footer__catalog__list
+              each elem, index in footerProductsList
+                li.footer__catalog__item
+                  a(href=elem.href)!=elem.text
+          .footer__content__wrap-list.footer__company__wrap-list
+            h3!=titleCompanyList
+            ul.footer__company__list
+              each elem, index in footerCompanyList
+                li.footer__company__item
+                  a(href=elem.href)!=elem.text
+        .footer__content__contacts.footer__contacts
+          .footer__contacts__item
+            .footer__contacts__phone
+              +icon("icon-phone", 24,24)
+              a(href="tel:+7(812) 999-12-86") +7(812) 999-12-86
+            +button({
+              color: "color-tangerine-yellow",
+              text: "Перезвонить",
+            }).footer__content__logo__button.footer__contacts__item__button
+            ul.footer__contacts__list
+              li.footer__contacts__adress
+                +icon("icon-flag", 24, 24).map__icon.map__icon--watch
+                .footer__contacts__adress-text
+                  span Адрес офиса
+                  p Москва, Соколово Мещерская ул., 14, 11
+
+              li.footer__contacts__mail
+                +icon("Icon-envelope", 24, 24).map__icon.map__icon--flag
+                .footer__contacts__adress-text
+                  span Написать нам
+                  a(href="mailto: dc-light.ru") dc-light.ru
+    .footer__adress
+      .container.footer__adress__container
+        ul.footer__adress__list
+          li.footer__contacts__adress.footer__adress__item
+            +icon("icon-flag", 24, 24).map__icon.map__icon--watch
+            .footer__contacts__adress-text
+              span Адрес офиса
+              p Москва, Соколово Мещерская ул., 14, 11
+          li.footer__contacts__mail.footer__adress__item
+            +icon("Icon-envelope", 24, 24).map__icon.map__icon--flag
+            .footer__contacts__adress-text
+              span Написать нам
+              a(href="mailto: dc-light.ru") dc-light.ru
+        +button({
+          color: "color-tangerine-yellow",
+          text: "Перезвонить",
+        }).footer__content__logo__button.footer__adress__button
+
+
     .footer__copyright
       .footer__copyright__container.container
         .footer__copyright__text
