@@ -25,6 +25,42 @@
     }
   }
 
+  &--color-whisper {
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $color-selective-yellow;
+      transition: background-color 0.6s ease;
+    }
+
+    &:focus {
+      background-color: $color-transparent;
+      transition: all 0.6s ease;
+    }
+
+    &:disabled {
+      background-color: $color-maire;
+      transition: background-color 0.6s ease;
+      color: $color-default-white;
+      opacity: 1;
+    }
+  }
+
+  &--color-transparent {
+    align-items: center;
+    font-family: $ff-manrope;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $color-dim-gray;
+    background-color: $color-transparent;
+
+    &:hover {
+      color: $color-maire;
+      transition: color 0.6s ease;
+    }
+  }
+
 
   &__icon-first {
     margin-right: 10px;
@@ -70,7 +106,6 @@
   }
 
   &:disabled {
-    opacity: 0.5;
     pointer-events: none;
   }
 
@@ -107,8 +142,105 @@
       }
     }
   }
+}
 
-  //- Кнопки карточки продукта в стилях карточки продукта
+//- Кнопка - название раздела в фильтре\
+.filter-part__header {
+  & button {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-maire;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      fill: $color-silver;
+    }
+
+    &:hover {
+      color: $color-selective-yellow;
+      transition: color 0.6s ease;
+
+      & svg {
+        fill: $color-selective-yellow;
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+}
+//- Кнопки фильтра показать и сбросить\
+.filter-part {
+  &__button-show {
+    width: 100%;
+    padding: 16px 90px;
+    border-radius: 4px;
+  }
+
+  &__button-reset {
+    margin-top: 20px;
+    color: $color-silver;
+  
+    & svg {
+      width: 8px;
+      height: 8px;
+      fill: $color-silver;
+    }
+  
+    &:hover {
+      color: $color-selective-yellow;
+      transition: color 0.6s ease;
+  
+      & svg {
+        fill: $color-selective-yellow;
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+
+  &__button-more {
+    padding: 0;
+    line-height: 24px;
+    margin-top: 16px;
+    color: $color-dim-gray;
+
+    &:hover {
+      color: $color-selective-yellow;
+      transition: color 0.6s ease;
+    }
+
+    &:disabled {
+      color: $color-maire;
+      pointer-events: none;
+    }
+  }
+}
+
+//Кнопка открыть фильтр
+.filter-parameter__button-open-filter {
+  display: none;
+  max-height: 50px;
+  padding: 15px 30px 15px 21px;
+  border-radius: 4px;
+
+  @include vp-1024 {
+    display: inline-flex;
+  }
+
+  @include vp-992 {
+    display: none;
+  }
+
+  &--title {
+    display: none;
+    
+    @include vp-992 {
+      display: inline-flex;
+    }
+  }
 }
 
 

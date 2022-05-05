@@ -295,6 +295,7 @@
     &__container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 40px;
     }
 
@@ -305,6 +306,7 @@
 
     & button {
       max-width: 150px;
+      max-height: 56px;
       padding: 18px 27px;
       border-radius: 4px;
       font-size: 14px;

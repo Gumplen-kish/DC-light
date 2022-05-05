@@ -43,25 +43,22 @@
   &--checkbox {
     .custom-toggle__icon {
       position: absolute;
+      content: "";
       top: 2px;
       left: 0;
-
       width: 16px;
       height: 16px;
-
       border: 1px solid rgba($color-default-black, 0.2);
-
       transition: border $trans-default;
 
+
+
       &::before {
-        content: "";
         position: absolute;
+        content: "";
         top: 50%;
         left: 50%;
-
-        width: 6px;
-        height: 6px;
-
+        display: inline-block;
         background-color: $color-transparent;
 
         transform: translate(-50%, -50%);
@@ -105,10 +102,17 @@
   }
 
   input:checked + .custom-toggle__icon {
-    border: 1px solid rgba($color-default-black, 0.8);
+    background-color: $color-selective-yellow;
+    
 
     &::before {
+      content: "L";
+      left: -6px;
+      top: 0;
       background-color: rgba($color-default-black, 0.8);
+      width: 0;
+      height: 0;
+      transform: rotate(315deg);
     }
   }
 

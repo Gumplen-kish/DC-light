@@ -9,20 +9,13 @@
   padding: 30px 0 0;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: red;
+  @include vp-1024 {
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  @include vp-1024 {
-    padding-left: 48px;
-    padding-right: 48px;
+  @include vp-992 {
+    padding-top: 25px;
   }
 
   @include vp-768 {

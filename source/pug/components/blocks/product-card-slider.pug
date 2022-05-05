@@ -3,9 +3,9 @@ mixin product-card-slider()
     +section-wrap(`Хиты продаж`,"Популярные товары").product-card-slider
       .product-card-slider__swiper.swiper
         ul.product-card-slider__list.swiper-wrapper
-          each elem, index in productDataSliderHit
+          each elem in productDataSliderHit.card
             li.product-card-slider__item
-              +product-small(productDataSlider)
+              +product-small(productDataSliderHit)
 
 
 

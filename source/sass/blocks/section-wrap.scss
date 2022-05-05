@@ -28,6 +28,11 @@
     line-height: 44px;
     color: $color-maire;
 
+    @include vp-992 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
     @include vp-576 {
       font-size: 22px;
       line-height: 30px;

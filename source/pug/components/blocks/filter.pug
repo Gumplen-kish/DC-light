@@ -1,0 +1,308 @@
+mixin filter()
+  .container.filter
+    .filter__wrap
+      +section-wrap("Каталог товаров", "Популярные товары").filter__section-wrap
+      +button({
+        color: "color-tangerine-yellow",
+        text: 'Открыть фильтр',
+        iconData: {
+          position: "first",
+          name: "icon-filter",
+          width: 24,
+          height: 24,
+          }
+      }).filter-parameter__button-open-filter.filter-parameter__button-open-filter--title
+    .filter__content
+      .filter__form
+        .filter__title
+          h3 Фильтры
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Показать',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.radio
+                  input(type="radio" id="1" name="product" checked)
+                  span.radio__custom
+                  span.radio__text Все товары
+              li.filter-list__item
+                label.radio
+                  input(type="radio" id="2" name="product")
+                  span.radio__custom
+                  span.radio__text Только в наличии
+              li.filter-list__item
+                label.radio
+                  input(type="radio" id="2" name="product")
+                  span.radio__custom
+                  span.radio__text Только в заказаные
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Цена',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Производитель',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox" checked)
+                  span.checkbox__custom
+                  span.checkbox__text Bosch
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Dewalt
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Einhell
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Forte
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Hyundai
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Makita
+            +button({
+              color: "color-transparent",
+              text: 'Показать еще'
+            }).filter-part__button-more
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Тип питания',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox" checked)
+                  span.checkbox__custom
+                  span.checkbox__text Аккумулятор
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text От сети
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Мощность, Вт',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox" checked)
+                  span.checkbox__custom
+                  span.checkbox__text 72
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text 65
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Цветовая температура',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox" checked)
+                  span.checkbox__custom
+                  span.checkbox__text 6000
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text 6500
+        .filter-part
+          .filter-part__header
+            +button({
+              text: 'Цвет',
+              color: "color-transparent",
+              iconData: {
+                position: "last",
+                name: "icon-chevron",
+                width: 24,
+                height: 24,
+              }
+            }) 
+          .filter-part__body
+            ul.filter-list
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox" checked)
+                  span.checkbox__custom
+                  span.checkbox__text Черный
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Белый
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Серый
+              li.filter-list__item
+                label.checkbox
+                  input(type="checkbox")
+                  span.checkbox__custom
+                  span.checkbox__text Золотой
+        .filter-part.filter-part--button
+          +button({
+            color: "color-tangerine-yellow",
+            text: 'Показать'
+          }).filter-part__button-show
+          +button({
+            color: "color-transparent",
+            text: 'Сбросить фильтр',
+            iconData: {
+              position: "first",
+              name: "icon-close",
+              width: 8,
+              height: 8,
+            }
+          }).filter-part__button-reset
+      .filter__body
+        .filter-parameter.filter-parameter--color
+          h3 Цвет
+          ul.filter-parameter__list 
+            li.filter-parameter__item
+              +button({
+                color: "color-whisper",
+                text: 'Черный',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-whisper",
+                text: 'Белый',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-whisper",
+                text: 'Серый',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-whisper",
+                text: 'Золотой',
+              })
+          +button({
+            color: "color-tangerine-yellow",
+            text: 'Открыть фильтр',
+            iconData: {
+              position: "first",
+              name: "icon-filter",
+              width: 24,
+              height: 24,
+            }
+          }).filter-parameter__button-open-filter
+        .filter-parameter.filter-parameter--sort
+          h3 Сортировка
+          ul.filter-parameter__list.filter-parameter__list--sort-button
+            li.filter-parameter__item
+              +button({
+                color: "color-transparent",
+                text: 'Черный',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-transparent",
+                text: 'Белый',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-transparent",
+                text: 'Серый',
+              })
+            li.filter-parameter__item
+              +button({
+                color: "color-transparent",
+                text: 'Золотой',
+              })
+          ul.filter-parameter__list.filter-parameter__list--sort-button_view
+            li.filter-parameter__item
+              +button({
+                iconData: {
+                  position: "center",
+                  name: "icon-list",
+                  width: 24,
+                  height: 24,
+                }
+              })(aria-label="Отображение списком").filter-parameter__sort-button.filter-parameter__sort-button__list
+            li.filter-parameter__item
+              +button({
+                iconData: {
+                  position: "center",
+                  name: "icon-tile",
+                  width: 24,
+                  height: 24,
+                }
+              })(aria-label="Отображение плиткой").filter-parameter__sort-button.filter-parameter__sort-button__tile
+      
+        
+        
+      
