@@ -1579,7 +1579,8 @@ button,
 }
 
 .about-company {
-  margin-bottom: 140px;
+  background-color: #fdfdfd;
+  padding-bottom: 140px;
 }
 
 .about-company__content p {
@@ -1950,6 +1951,18 @@ button,
 
 .main-nav__toggle {
   display: none;
+}
+
+.catalog {
+  width: 100%;
+}
+
+.catalog__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
 }
 
 .footer {
@@ -2680,6 +2693,56 @@ div.footer__content__social-list a:hover svg {
 
 .filter-parameter__button-open-filter--title {
   display: none;
+}
+
+.pagination-btn__it:hover {
+  background-color: #fdc900;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.pagination-btn__it:hover .pagination-btn__link {
+  color: #121211;
+  -webkit-transition: color 0.6s ease;
+  -o-transition: color 0.6s ease;
+  transition: color 0.6s ease;
+}
+
+.pagination-btn__btn {
+  width: 50px;
+  height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.pagination-btn__btn svg {
+  fill: #747474;
+}
+
+.pagination-btn__btn:hover {
+  background-color: #fdc900;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.pagination-btn__btn:hover svg {
+  fill: #121211;
+  -webkit-transition: fill 0.6s ease;
+  -o-transition: fill 0.6s ease;
+  transition: fill 0.6s ease;
+}
+
+.pagination-btn__show-more {
+  padding: 15px 40px 15px 30px;
+  height: 50px;
+  border-radius: 4px;
 }
 
 .custom-input,
@@ -3601,7 +3664,7 @@ div.footer__content__social-list a:hover svg {
 }
 
 .section-wrap {
-  margin-top: 70px;
+  padding-top: 70px;
   font-family: "Manrope";
 }
 
@@ -3624,6 +3687,10 @@ div.footer__content__social-list a:hover svg {
   font-size: 16px;
   line-height: 22px;
   color: #747474;
+}
+
+.recently-card {
+  background-color: #fdfdfd;
 }
 
 .recently-card-slider__list {
@@ -3900,6 +3967,44 @@ div.footer__content__social-list a:hover svg {
   color: #747474;
 }
 
+.pagination-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 60px 0;
+  gap: 10px;
+}
+
+.pagination-btn__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-btn__it {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+}
+
+.pagination-btn__link {
+  color: #747474;
+}
+
 .radio {
   position: relative;
   display: block;
@@ -4026,7 +4131,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .about-company {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   .header-catalog__container {
@@ -4180,7 +4285,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .section-wrap {
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   .section-wrap__text {
@@ -4228,7 +4333,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .about-company {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .about-company__content p {
@@ -4332,7 +4437,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .section-wrap {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 
   .section-wrap h2 {
@@ -4374,7 +4479,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .about-company {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .about-company__content {
@@ -4564,7 +4669,7 @@ div.footer__content__social-list a:hover svg {
   }
 
   .section-wrap {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 
   .section-wrap__text {

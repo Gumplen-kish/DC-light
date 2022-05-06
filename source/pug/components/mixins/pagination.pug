@@ -1,0 +1,48 @@
+mixin pagination-btn(lastPrev="24", last="25")
+  .pagination-btn&attributes(attributes)
+    +button({
+      color: "color-whisper",
+      iconData: {
+        position: "center",
+        name: "icon-arrowleft",
+        width: 24,
+        height: 24,
+      }
+    })(aria-label="Предыдущий").pagination-btn__btn.pagination-btn__btn--prev(type="button")
+      
+      
+    ul.pagination-btn__list
+      - var count = 0;
+      while (count < 5)
+        li.pagination-btn__it
+          if(count === 0)
+            a.pagination-btn__link.pagination-btn__link--active !{++count}
+          else
+            a.pagination-btn__link !{++count}
+      li.pagination-btn__it
+        a.pagination-btn__link.pagination-btn__link--more ...
+      li.pagination-btn__it
+        a.pagination-btn__link !{lastPrev}
+      li.pagination-btn__it
+        a.pagination-btn__link !{last}
+    
+    +button({
+      color: "color-whisper",
+      iconData: {
+        position: "center",
+        name: "icon-arrowright",
+        width: 24,
+        height: 24,
+      }
+    })(aria-label="Следующий").pagination-btn__btn.pagination-btn__btn--prev
+
+    +button({
+      color: "color-tangerine-yellow",
+      text: 'Показать ещё',
+      iconData: {
+        position: "first",
+        name: "icon-points",
+        width: 24,
+        height: 24,
+      }
+    })(aria-label="Следующий").pagination-btn__show-more

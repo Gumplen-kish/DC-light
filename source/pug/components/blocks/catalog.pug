@@ -1,0 +1,6 @@
+mixin catalog()
+  ul.catalog__list
+    each elem in catalogData.card
+      li.product-card-slider__item
+        +product-small(elem)
+  +pagination-btn().catalog__pagination

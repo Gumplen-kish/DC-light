@@ -61,7 +61,7 @@ mixin intro-slider(options = {})
     .intro-slider__product-slider.product-slider
       .product-slider__swiper.swiper
         .product-slider__wrap.swiper-wrapper
-          each elem, index in productDataSlider
+          each elem in productDataSlider.card
             .product-slider__item.swiper-slide
-              +product-small(productDataSlider)
+              +product-small(elem)
 
