@@ -1,0 +1,10 @@
+mixin examples-works()
+  .examples-works
+    .container.examples-works__container
+      +section-wrap("Примери наших работ","Мы дарим свет")
+      .examples-works__slider-swiper.swiper
+        .examples-works__slider.swiper-container
+          ul.examples-works__list.swiper-wrapper
+            each elem in examplesDataSlider
+              li.examples-works__item.swiper-slide
+                +img("examples", `${elem.index}`, "png", 285, 220, `${elem.alt}`)

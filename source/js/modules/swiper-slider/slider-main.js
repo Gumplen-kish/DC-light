@@ -29,5 +29,4 @@ const initSliderHit = () => {
   });
 };
 
-
 export {initSwiperMain, initSliderHit};
