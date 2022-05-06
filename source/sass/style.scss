@@ -18,12 +18,14 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/advantages";
 @import "blocks/bread-crumbs";
 @import "blocks/about-company";
 @import "blocks/header";
 @import "blocks/intro-slider";
 @import "blocks/main-nav";
 @import "blocks/catalog";
+@import "blocks/choice-rule";
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/btn";
@@ -44,6 +46,7 @@
 @import "mixins/checkbox";
 @import "mixins/pagination-btn";
 @import "mixins/radio";
+
 
 
 // ---------------------------------

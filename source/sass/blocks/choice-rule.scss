@@ -1,0 +1,144 @@
+.choice-rule {
+  margin-top: 105px;
+
+  & h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    color: $color-maire;
+  }
+
+  @include vp-1024 {
+    margin-top: 100px;
+  }
+
+  @include vp-992 {
+    margin-top: 95px;
+  }
+
+  @include vp-576 {
+    margin-top: 85px;
+  }
+
+  &--border {
+    margin-top: 70px;
+
+    @include vp-1024 {
+      margin-top: 50px;
+    }
+  
+    @include vp-992 {
+      margin-top: 40px;
+    }
+    @include vp-768 {
+      margin-top: 40px;
+    }
+  
+    @include vp-576 {
+      margin-top: 30px;
+    }
+  }
+
+  &__text {
+    & p {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+
+      @include vp-576 {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__list-wrap {
+    margin-top: 50px;
+
+    @include vp-1024 {
+      margin-top: 45px;
+    }
+  
+    @include vp-992 {
+      margin-top: 40px;
+    }
+  
+    @include vp-576 {
+      margin-top: 30px;
+    }
+  
+    & h4 {
+      margin-top: 0;
+      margin-bottom: 30px;
+    
+      @include vp-992 {
+        margin-top: 25px;
+      }
+    
+      @include vp-576 {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 36px;
+
+    @include vp-1024 {
+      column-gap: 31px;
+    }
+
+    @include vp-992 {
+      grid-template-columns: auto auto;
+      column-gap: 68px;
+    }
+
+    @include vp-576 {
+      grid-template-columns: auto
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    padding-left: 14px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40%;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $color-selective-yellow;
+    }
+
+    & p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+    }
+  }
+
+  //текст с рамкой 
+  &__text-border {
+    padding: 40px;
+    border: 1px solid $color-whisper;
+    border-radius: 6px;
+
+    @include vp-992 {
+      padding: 30px;
+    }
+
+    @include vp-576 {
+      padding: 20px;
+    }
+  }
+}

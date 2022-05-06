@@ -1,0 +1,26 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "DC-light_about-us" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "about-us.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    block bread-crumbs
+      +bread-crumbs(aboutUs)
+    +description()
+    +choice-rule()
+    +advantages()
+    
+    
+    +recently-card-slider()
+    +about-company()
+    +map()
+
+
+block modals
