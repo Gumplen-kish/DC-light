@@ -520,7 +520,61 @@
                 </ul>
               </div>
             </div>
+            <div class="examples-works__nav">
+              <button class="button button--color-whisper  examples-works__button-prev" type="button" aria-label="Предыдущий слайд"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-arrowleft"></use>
+                </svg>
+              </button>
+              <button class="button button--color-whisper  examples-works__button-next" type="button" aria-label="Следующий слайд"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-arrowright"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="wrap-text__text">
+              <h3>Мы расскажем о правилах выбора</h3>
+              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
+              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
+            </div>
           </div>
+        </div>
+        <div class="container questions">
+          <section class="section-wrap">
+            <h2>Остались вопросы</h2>
+            <p class="section-wrap__text">Напишите нам</p>
+          </section>
+          <form class="questions__form" action="#" method="post">
+            <div class="questions__input-wrap">
+              <div class="custom-input" data-validate-type="text" data-limitations="name">
+                <label><span class="custom-input__label"></span>
+                  <input type="text" name="user-name" minlength="2" placeholder="Ваше имя">
+                  <div class="custom-input__error">Не корректное имя</div>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="phone">
+                <label><span class="custom-input__label"></span>
+                  <input type="tel" name="user-phone" placeholder="Ваш телефон">
+                  <div class="custom-input__error">Не корректный телефон</div>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="email">
+                <label><span class="custom-input__label"></span>
+                  <input type="email" name="user-email" placeholder="Ваша почта">
+                  <div class="custom-input__error">Не корректный email</div>
+                </label>
+              </div>
+            </div>
+            <div class="questions__textarea-wrap">
+              <div class="custom-textarea">
+                <label>
+                  <textarea placeholder="Текст сообщения"></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="button button--color-tangerine-yellow  questions__button" type="submit"><span>Отправить</span>
+            </button>
+          </form>
         </div>
         <div class="container recently-card">
           <section class="section-wrap recently-card-slider">

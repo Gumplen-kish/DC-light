@@ -1,0 +1,14 @@
+mixin questions()
+  .container.questions
+    +section-wrap("Остались вопросы", "Напишите нам")
+    form(action="#", method="post").questions__form
+      .questions__input-wrap
+        +custom-input({inputType: "text", inputPlaceholder: "Ваше имя", inputError: "Не корректное имя", inputName: "user-name", inputMinLength: "2"})(data-validate-type="text", data-limitations="name")
+        +custom-input({inputType: "tel", inputPlaceholder: "Ваш телефон", inputError: "Не корректный телефон", inputName: "user-phone"})(data-validate-type="phone")
+        +custom-input({inputType: "email", inputPlaceholder: "Ваша почта", inputError: "Не корректный email", inputName: "user-email"})(data-validate-type="email")
+      .questions__textarea-wrap
+        +custom-textarea({inputPlaceholder: "Текст сообщения",})
+      +button({
+        color: "color-tangerine-yellow",
+        text: "Отправить",
+      })(type="submit").questions__button

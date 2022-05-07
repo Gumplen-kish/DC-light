@@ -1,22 +1,65 @@
 .examples-works {
+  position: relative;
   margin-top: 70px;
   background: linear-gradient(to bottom, rgba(248, 248, 250, 0.65), rgba(248, 248, 250, 0));
 
   &__slider {
-    
-  }
+    margin-bottom: 70px;
 
-  &__list {
+    @include vp-1024 {
+      margin-bottom: 50px;
+    }
     
+    @include vp-992 {
+      margin-bottom: 40px;
+    }
+
+    @include vp-768 {
+      margin-bottom: 40px;
+    }
+
+    @include vp-576 {
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
     width: 285px;
+    
 
     & img {
       width: 285px;
       height: 220px;
       object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    content: "";
+    width: auto;
+    max-width: 1230px;
+    top: 288px;
+    z-index: 10;
+
+    & button {
+      position: absolute;
+      content: "";
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+
+      &.examples-works__button-prev {
+        left: -106px;
+      }
+
+      &.examples-works__button-next {
+        right: -106px;
+      }
     }
   }
 }

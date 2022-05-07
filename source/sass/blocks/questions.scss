@@ -1,0 +1,47 @@
+.questions {
+  &__button {
+    padding: 18px 70px;
+    border-radius: 4px;
+  }
+
+  &__input-wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include vp-768 {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    & .custom-input {
+      width: 100%;
+      min-width: 210px;
+      padding: 0;
+    }
+  }
+
+  &__textarea-wrap {
+    margin-bottom: 40px;
+
+    @include vp-768 {
+      margin-bottom: 20;
+    }
+
+    & .custom-textarea {
+      padding: 0;
+
+      & textarea {
+        min-height: 142px;
+      }
+    }
+  }
+
+  &__button {
+    @include vp-576 {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

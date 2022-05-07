@@ -8,8 +8,8 @@ const initExamplesSlider = () => {
     spaceBetween: 30,
     slidesPerView: 4,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.examples-works__button-next',
+      prevEl: '.examples-works__button-prev',
     },
   });
 };

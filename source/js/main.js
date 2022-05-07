@@ -5,7 +5,7 @@ import {initFormValidate} from './modules/form/init-form-validate';
 import {initSwiperMain} from './modules/swiper-slider/slider-main';
 import {initSliderHit} from './modules/swiper-slider/slider-main';
 import {initExamplesSlider} from './modules/swiper-slider/slider-examples';
-
+import {initPhoheMask} from './modules/form/mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiperMain();
     initSliderHit();
     initExamplesSlider();
+    initPhoheMask();
   });
 });
 

@@ -8,3 +8,23 @@ mixin examples-works()
             each elem in examplesDataSlider
               li.examples-works__item.swiper-slide
                 +img("examples", `${elem.index}`, "png", 285, 220, `${elem.alt}`)
+      .examples-works__nav
+        +button({
+          color: "color-whisper",
+          iconData: {
+            position: "center",
+            name: "icon-arrowleft",
+            width: 24,
+            height: 24,
+          } 
+        })(aria-label="Предыдущий слайд").examples-works__button-prev
+        +button({
+          color: "color-whisper",
+          iconData: {
+            position: "center",
+            name: "icon-arrowright",
+            width: 24,
+            height: 24,
+          } 
+        })(aria-label="Следующий слайд").examples-works__button-next
+      +wrap-text()
