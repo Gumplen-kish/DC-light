@@ -1,5 +1,5 @@
 mixin filter()
-  .container.filter
+  .container.filter&attributes(attributes)
     .filter__wrap
       +section-wrap("Каталог товаров", "Популярные товары").filter__section-wrap
       +button({

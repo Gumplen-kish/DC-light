@@ -3658,6 +3658,21 @@ div.footer__content__social-list a:hover svg {
   color: #121211;
 }
 
+.map__list__page-Contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 70px;
+  gap: 30px;
+}
+
+.map__list__page-Contacts li {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}
+
 .product-small {
   width: 100%;
   max-width: 285px;
@@ -4420,6 +4435,11 @@ div.footer__content__social-list a:hover svg {
   .map__item {
     border-radius: 0;
   }
+
+  .map__list__page-Contacts {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -4559,6 +4579,10 @@ div.footer__content__social-list a:hover svg {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+
+  .map__list__page-Contacts {
+    margin-bottom: 60px;
   }
 
   .product-slider {
@@ -4746,6 +4770,10 @@ div.footer__content__social-list a:hover svg {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+  }
+
+  .map__list__page-Contacts {
+    margin-bottom: 50px;
   }
 
   .production-lamp__list {
@@ -5019,6 +5047,29 @@ div.footer__content__social-list a:hover svg {
     border-radius: 4px;
   }
 
+  .map__list__page-Contacts {
+    margin-bottom: 40px;
+  }
+
+  .map__list__page-Contacts li {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .map__text {
+    gap: 17px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .map__text p {
+    text-align: center;
+  }
+
   .production-lamp__list {
     display: -ms-grid;
     display: grid;
@@ -5267,6 +5318,12 @@ div.footer__content__social-list a:hover svg {
   .map__item {
     width: 100%;
     max-width: 290px;
+  }
+
+  .map__list__page-Contacts {
+    margin-bottom: 30px;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .production-lamp__item {

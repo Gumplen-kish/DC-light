@@ -7,20 +7,12 @@ block variables
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
-  - const currentUrl = "about-us.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const currentUrl = "contacts.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
 block main
   main
     block bread-crumbs
-      +bread-crumbs(aboutUsBc)
-    +description()
-    +choice-rule()
-    +advantages()
-    +examples-works()
+      +bread-crumbs(contactsBc)
+    +map({mapContacts: true})
     +questions()
-    +recently-card-slider()
-    +about-company()
-    +map()
-
-
 block modals

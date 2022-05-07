@@ -1,5 +1,5 @@
 mixin catalog()
-  ul.catalog__list
+  ul.catalog__list&attributes(attributes)
     each elem in catalogData.card
       li.product-card-slider__item
         +product-small(elem)

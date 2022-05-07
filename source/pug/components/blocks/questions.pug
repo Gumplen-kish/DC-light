@@ -1,5 +1,5 @@
 mixin questions()
-  .container.questions
+  .container.questions&attributes(attributes)
     +section-wrap("Остались вопросы", "Напишите нам")
     form(action="#", method="post").questions__form
       .questions__input-wrap

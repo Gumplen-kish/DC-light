@@ -1,5 +1,5 @@
 mixin product-card-slider() 
-  .container 
+  .container&attributes(attributes)
     +section-wrap(`Хиты продаж`,"Популярные товары").product-card-slider
       .product-card-slider__swiper.swiper
         ul.product-card-slider__list.swiper-wrapper
