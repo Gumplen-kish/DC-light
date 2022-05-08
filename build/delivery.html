@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Список страниц</title>
+    <title>DC-light_delivery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -228,65 +228,486 @@
 </symbol></svg>
     </div>
     <div class="wrapper">
-      <style>
-        .container {
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
-        
-        h1 {
-          font-size: 24px;
-          line-height: 28px;
-        }
-        
-        a {
-          color: rgb(10, 10, 175);
-        }
-        
-        li {
-          font-size: 18px;
-          line-height: 22px;
-          margin-bottom: 7px;
-        }
-        
-        img {
-          width: 100%;
-          max-width: 300px;
-          height: auto;
-          display: block;
-          margin-bottom: 40px;
-        }
-        
-        @media (max-width: 768px) {
-          .container {
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
-        
-          ol {
-            padding-left: 20px;
-          }
-        
-          ol li {
-            margin-bottom: 15px;
-          }
-        }
-        
-      </style>
+      <header class="header">
+        <nav class="header__main-nav main-nav">
+          <div class="container main-nav__wrap">
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="about-us.html">О компании</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="cooperation.html">Сотрудничество</a>
+                </li>
+                <li class="main-nav__item"><span class="main-nav__link is-active">Доставка и оплата</span>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Монтаж</a>
+                </li>
+              </ul>
+            </div>
+            <button class="button button--color-tangerine-yellow " type="button"><span>Санкт-Петербург</span>
+              <svg class="button__icon-last" width="8" height="14" aria-hidden="true">
+                <use xlink:href="#icon-arrowbottom"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="container header__wrap"><a class="header__logo" href="index.html" aria-label="Переход на главную"> <img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="191" height="67" alt="Логотип просзводства светильников"></a>
+          <div class="custom-input header__search">
+            <label>
+              <input type="text" placeholder="Поиск">
+              <svg class="custom-input__icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="header__contacts">
+            <svg class="header__contacts-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <div class="header__contacts-phone"><a href="tel:+7 (812) 999-12-86">+7 (812) 999-12-86</a>
+              <p>dc-light.ru</p>
+            </div>
+          </div>
+          <div class="header__button-wrap"><a class="button button--color-ghost-white " href="#" aria-label="Избранное"><span></span>
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-flag"></use>
+              </svg></a><a class="button button--color-ghost-white " href="#" aria-label="Корзина"><span>5</span>
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-cart"></use>
+              </svg></a><a class="button button--color-ghost-white " href="#" aria-label="Личный кабинет"><span></span>
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-user"></use>
+              </svg></a>
+          </div>
+        </div>
+        <div class="header__catalog header-catalog">
+          <div class="container header-catalog__container">
+            <button class="button button--color-tangerine-yellow  header-catalog__button" type="button">
+              <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
+                <use xlink:href="#icon-catalog"></use>
+              </svg><span>Каталог</span>
+            </button>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name1" data-id="id-example1">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Линейные</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name2" data-id="id-example2">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Кольца</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name3" data-id="id-example3">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Круги</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name4" data-id="id-example4">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Квадраты</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name5" data-id="id-example5">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Треугольные</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+            <div class="custom-select" data-select data-validate-type="select" data-name="some-name6" data-id="id-example6">
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+              <ul class="custom-select__list" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Фигурные</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Гибкий неон LP/LN</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Гибкий неон ARL</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Двусторонний</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">В форме D</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Круглый 360º</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false" role="option">С белой оболочкой</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false" role="option">С цветной оболочкой</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
       <main>
-        <div class="container"><img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="191" height="67" alt="Логотип просзводства светильников">
-          <h1>Список страниц</h1>
-          <ol>
-            <li><a href="ui-kit.html">UI-kit — ui-kit.html</a></li>
-            <li><a href="index.html">Главная — index.html</a></li>
-            <li><a href="catalog.html">Каталог — catalog.html</a></li>
-            <li><a href="about-us.html">О компании — about-us.html</a></li>
-            <li><a href="contacts.html">Контакты — contacts.html</a></li>
-            <li><a href="cooperation.html">Сотрудничество — cooperation.html</a></li>
-            <li><a href="delivery.html">Доставка и оплата — delivery.html</a></li>
+        <div class="container container--no-padding-tm">
+          <ol class="bread-crumbs">
+            <li class="bread-crumbs__it"><a href="index.html">Главная</a></li>
+            <li class="bread-crumbs__it bread-crumbs__it--active"><a>О компании</a></li>
           </ol>
         </div>
+        <div class="img-intro">
+          <div class="container img-intro__container">
+            <section class="section-wrap">
+              <h2>Доставка и оплата</h2>
+              <p class="section-wrap__text">Быстро и не дорого</p>
+            </section>
+            <div class="img-intro__wrap"><img src="img/content/intro-delivery.png" srcset="img/content/intro-delivery@2x.png 2x" width="1230" height="320" alt="Картинка интро страницы">
+              <div class="img-intro__description">
+                <h3>Доставка</h3>
+                <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.</p>
+                <div class="description__btn img-intro__button-wrap">
+                  <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
+                    <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-requisites"></use>
+                    </svg><span>Скачать реквизиты</span>
+                  </button>
+                  <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
+                    <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-contract"></use>
+                    </svg><span>Скачать договор</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="description__btn img-intro__button-wrap img-intro__button-wrap--mobile">
+              <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
+                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-requisites"></use>
+                </svg><span>Скачать реквизиты</span>
+              </button>
+              <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
+                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-contract"></use>
+                </svg><span>Скачать договор</span>
+              </button>
+            </div>
+            <div class="wrap-text__text img-intro__wrap-text wrap-text">
+              <h3>Мы расскажем о правилах выбора</h3>
+              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
+              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container questions">
+          <section class="section-wrap">
+            <h2>Остались вопросы</h2>
+            <p class="section-wrap__text">Напишите нам</p>
+          </section>
+          <form class="questions__form" action="#" method="post">
+            <div class="questions__input-wrap">
+              <div class="custom-input" data-validate-type="text" data-limitations="name">
+                <label><span class="custom-input__label"></span>
+                  <input type="text" name="user-name" minlength="2" placeholder="Ваше имя">
+                  <div class="custom-input__error">Не корректное имя</div>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="phone">
+                <label><span class="custom-input__label"></span>
+                  <input type="tel" name="user-phone" placeholder="Ваш телефон">
+                  <div class="custom-input__error">Не корректный телефон</div>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="email">
+                <label><span class="custom-input__label"></span>
+                  <input type="email" name="user-email" placeholder="Ваша почта">
+                  <div class="custom-input__error">Не корректный email</div>
+                </label>
+              </div>
+            </div>
+            <div class="questions__textarea-wrap">
+              <div class="custom-textarea">
+                <label>
+                  <textarea placeholder="Текст сообщения"></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="button button--color-tangerine-yellow  questions__button" type="submit"><span>Отправить</span>
+            </button>
+          </form>
+        </div>
+        <div class="container recently-card">
+          <section class="section-wrap recently-card-slider">
+            <h2>Недавно смотрели</h2>
+            <p class="section-wrap__text">Не забыли об этом товаре?</p>
+            <div class="recently-card-slider__swiper swiper">
+              <ul class="recently-card-slider__list swiper-wrapper">
+                <li class="recently-card-slider__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                    <div class="product-small">
+                      <div class="product-small__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-small__span intro-slider__span intro-slider__span--new">Новинка</span>
+                      </div><span class="product-small__span-lk">ЛК: 41001544</span>
+                      <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                      <div class="product-small__rating">
+                        <ul class="product-small__list-star">
+                          <li class="product-card__star product-card__star--blue">
+                            <svg width="14" height="13" aria-hidden="true">
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                          </li>
+                          <li class="product-card__star product-card__star--blue">
+                            <svg width="14" height="13" aria-hidden="true">
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                          </li>
+                          <li class="product-card__star product-card__star--blue">
+                            <svg width="14" height="13" aria-hidden="true">
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                          </li>
+                          <li class="product-card__star product-card__star--half">
+                            <svg width="14" height="13" aria-hidden="true">
+                              <use xlink:href="#icon-starhalf"></use>
+                            </svg>
+                          </li>
+                          <li class="product-card__star product-card__star-gray">
+                            <svg width="14" height="13" aria-hidden="true">
+                              <use xlink:href="#icon-stargray"></use>
+                            </svg>
+                          </li>
+                        </ul><span class="product-small__span-raiting">4.05</span>
+                      </div>
+                      <div class="product-small__characteristic">
+                        <dl>
+                          <dt>Размеры</dt>
+                          <div></div>
+                          <dd>1x1 м</dd>
+                        </dl>
+                        <dl>
+                          <dt>Мощность</dt>
+                          <div></div>
+                          <dd>72 Вт</dd>
+                        </dl>
+                        <dl>
+                          <dt>Температура</dt>
+                          <div></div>
+                          <dd>6500К</dd>
+                        </dl>
+                      </div>
+                      <div class="product-small__price"><span class="product-small__price__new">1 670 ₽</span><span class="product-small__price__old">2 190 ₽</span></div>
+                      <div class="product-small__button-wrap">
+                        <button class="button button--color-tangerine-yellow  product-small__button-wrap__button-cart" type="button"><span>В корзину</span>
+                        </button>
+                        <button class="button button--gray  product-small__button-wrap__button-favourites" type="button" aria-label="В избранное"><span></span>
+                          <svg width="24" height="24" aria-hidden="true">
+                            <use xlink:href="#icon-flag"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="description about-company">
+          <div class="container description__container">
+            <section class="section-wrap">
+              <h2>О компании</h2>
+              <p class="section-wrap__text">Мы рады Вам</p>
+            </section>
+            <div class="about-company__content description__content"><img src="img/content/intro-aboutCompany.png" srcset="img/content/intro-aboutCompany@2x.png 2x" width="390" height="300" alt="Картинка интро" align="left">
+              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна.</p>
+              <p>Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах. </p>
+              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <picture><source  media="(max-width: 576px)" srcset="img/map/map_320.png" srcset="img/map/map_320@2x.png">
+<source  media="(max-width: 768px)" srcset="img/map/map_576.png" srcset="img/map/map_576@2x.png">
+<source  media="(max-width: 992px)" srcset="img/map/map_768.png" srcset="img/map/map_768@2x.png">
+<source  media="(max-width: 1280px)" srcset="img/map/map_992.png" srcset="img/map/map_992@2x.png">
+<source  srcset="img/map/map.png" srcset="img/map/map@2x.png">
+<img src="img/map/map.png" alt="Карта с адресом компании: Москва, Соколово Мещерская ул., 14, 11" width="100%" height="640">
+          </picture>
+          <div class="container map__container">
+            <ul class="map__list">
+              <li class="map__item">
+                <svg class="map__icon map__icon--watch" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-watch"></use>
+                </svg>
+                <div class="map__text"><span>График работы</span>
+                  <p>Пн.-Вс.: с 9:00 до 21:00  </p>
+                </div>
+              </li>
+              <li class="map__item">
+                <svg class="map__icon map__icon--flag" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-flag"></use>
+                </svg>
+                <div class="map__text"><span>Как нас найти</span>
+                  <p>Москва, Соколово Мещерская ул., 14, 11  </p>
+                </div>
+              </li>
+              <li class="map__item map__item--mail">
+                <svg class="map__icon map__icon--envelope" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#Icon-envelope"></use>
+                </svg>
+                <div class="map__text"><span>Написать нам</span><a href="mailto: dc-light.ru">dc-light.ru</a></div>
+              </li>
+              <li class="map__item map__item--phone">
+                <svg class="map__icon map__icon--phone" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                <div class="map__text"><span>Наш телефон</span><a href="tel:+7 (812) 999-12-86">+7(812) 999-12-86</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__content">
+            <div class="footer__content__logo"><a class="header__logo" href="index.html" aria-label="Переход на главную"> <img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="191" height="67" alt="Логотип просзводства светильников"></a>
+              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения.</p>
+              <div class="footer__content__social-list"><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button footer__content__social-list__button" href="#" aria-label="Перейти на страницу Вконтакте"><span></span>
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button footer__content__social-list__button" href="#" aria-label="Instagramm"><span></span>
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button footer__content__social-list__button" href="#" aria-label="Whatsapp"><span></span>
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button footer__content__social-list__button" href="#" aria-label="Telegram"><span></span>
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#icon-telegram"></use>
+                  </svg></a>
+              </div>
+              <button class="button button--color-tangerine-yellow  footer__content__logo__button" type="button"><span>Перезвонить</span>
+              </button>
+            </div>
+            <div class="footer__content__catalog footer__catalog">
+              <div class="footer__content__wrap-list footer__catalog__wrap-list">
+                <h3>Продукты</h3>
+                <ul class="footer__catalog__list">
+                  <li class="footer__catalog__item"><a href="#">Весь каталог</a></li>
+                  <li class="footer__catalog__item"><a href="#">Линейные</a></li>
+                  <li class="footer__catalog__item"><a href="#">Кольца</a></li>
+                  <li class="footer__catalog__item"><a href="#">Круги</a></li>
+                  <li class="footer__catalog__item"><a href="#">Квадраты</a></li>
+                  <li class="footer__catalog__item"><a href="#">Треугольные</a></li>
+                  <li class="footer__catalog__item"><a href="#">Фигурные</a></li>
+                </ul>
+              </div>
+              <div class="footer__content__wrap-list footer__company__wrap-list">
+                <h3>Компания</h3>
+                <ul class="footer__company__list">
+                  <li class="footer__company__item"><a href="#">О компании</a></li>
+                  <li class="footer__company__item"><a href="#">Контакты</a></li>
+                  <li class="footer__company__item"><a href="#">Сотрудничество</a></li>
+                  <li class="footer__company__item"><a href="#">Доставка и оплата</a></li>
+                  <li class="footer__company__item"><a href="#">Монтаж</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__content__contacts footer__contacts">
+              <div class="footer__contacts__item">
+                <div class="footer__contacts__phone">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg><a href="tel:+7(812) 999-12-86">+7(812) 999-12-86</a>
+                </div>
+                <button class="button button--color-tangerine-yellow  footer__content__logo__button footer__contacts__item__button" type="button"><span>Перезвонить</span>
+                </button>
+                <ul class="footer__contacts__list">
+                  <li class="footer__contacts__adress">
+                    <svg class="map__icon map__icon--watch" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-flag"></use>
+                    </svg>
+                    <div class="footer__contacts__adress-text"><span>Адрес офиса</span>
+                      <p>Москва, Соколово Мещерская ул., 14, 11</p>
+                    </div>
+                  </li>
+                  <li class="footer__contacts__mail">
+                    <svg class="map__icon map__icon--flag" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#Icon-envelope"></use>
+                    </svg>
+                    <div class="footer__contacts__adress-text"><span>Написать нам</span><a href="mailto: dc-light.ru">dc-light.ru</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__adress">
+          <div class="footer__adress__container">
+            <ul class="footer__adress__list">
+              <li class="footer__contacts__adress footer__adress__item">
+                <svg class="map__icon map__icon--watch" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-flag"></use>
+                </svg>
+                <div class="footer__contacts__adress-text"><span>Адрес офиса</span>
+                  <p>Москва, Соколово Мещерская ул., 14, 11</p>
+                </div>
+              </li>
+              <li class="footer__contacts__mail footer__adress__item">
+                <svg class="map__icon map__icon--flag" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#Icon-envelope"></use>
+                </svg>
+                <div class="footer__contacts__adress-text"><span>Написать нам</span><a href="mailto: dc-light.ru">dc-light.ru</a></div>
+              </li>
+            </ul>
+            <button class="button button--color-tangerine-yellow  footer__content__logo__button footer__adress__button" type="button"><span>Перезвонить</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright__container container">
+            <div class="footer__copyright__text">
+              <p>© 2022 Все права защищены</p><a>Политикa конфиденциальности</a>
+            </div>
+            <div class="footer__copyright__social-list"><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button" href="#" aria-label="Перейти на страницу Вконтакте"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-vk"></use>
+                </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button" href="#" aria-label="Instagramm"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button" href="#" aria-label="Whatsapp"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg></a><a class="button button--$color-tangerine-yellow  footer__copyright__social-list__button" href="#" aria-label="Telegram"><span></span>
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

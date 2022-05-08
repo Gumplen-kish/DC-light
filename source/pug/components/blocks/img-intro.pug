@@ -1,0 +1,52 @@
+mixin img-intro(props={})
+  - const {title, subTitle,img,alt, titleDesc, textDesc, btnFirstName, btnSecondName} = props
+  .img-intro&attributes(attributes)
+    .container.img-intro__container
+      +section-wrap(`${title}`, `${subTitle}`)
+      .img-intro__wrap
+        +img("content", `intro-${img}`, "png", 1230, 320, `${alt}`)
+        .img-intro__description
+          h3!=titleDesc
+          p!=textDesc
+          .description__btn.img-intro__button-wrap
+            +button({
+              text: `${btnFirstName}`,
+              iconData: {
+                position: "first",
+                name: "icon-requisites",
+                width: 24,
+                height: 24,
+              }
+            }).description__btn-requisites.description__btn-requisites--img-intro.img-intro__btn
+
+            +button({
+              text: `${btnSecondName}`,
+              iconData: {
+                position: "first",
+                name: "icon-contract",
+                width: 24,
+                height: 24,
+              }
+            }).description__btn-contract.img-intro__btn.description__btn-requisites--img-intro
+      .description__btn.img-intro__button-wrap.img-intro__button-wrap--mobile
+        +button({
+          text: "Скачать реквизиты",
+          iconData: {
+            position: "first",
+            name: "icon-requisites",
+            width: 24,
+            height: 24,
+          }
+        }).description__btn-requisites.description__btn-requisites--img-intro.img-intro__btn
+
+        +button({
+          text: "Скачать договор",
+          iconData: {
+            position: "first",
+            name: "icon-contract",
+            width: 24,
+            height: 24,
+          }
+        }).description__btn-contract.img-intro__btn.description__btn-requisites--img-intro
+      +wrap-text.img-intro__wrap-text.wrap-text
+      

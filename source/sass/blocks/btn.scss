@@ -316,7 +316,7 @@
   font-weight: 700;
 
   color: $color-maire;
-  background-color: $color-default-white;
+  background-color: $color-transparent;
   border: 2px solid $color-tangerine-yellow;
   border-radius: 4px;
 
@@ -324,6 +324,22 @@
     fill: $color-maire;
     width: 24px;
     height: 24px;
+  }
+
+  &--img-intro {
+    color: $color-default-white;
+
+    @include vp-576 {
+      color: $color-maire;
+    }
+
+    & svg {
+      fill:  $color-default-white;
+
+      @include vp-576 {
+        fill: $color-maire;
+      }
+    }
   }
 }
 

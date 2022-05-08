@@ -1848,6 +1848,51 @@ button,
   padding: 26px 45px 22px 41px;
 }
 
+.img-intro__wrap {
+  position: relative;
+  height: 100%;
+}
+
+.img-intro__wrap img {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.img-intro__description {
+  width: 560px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.img-intro__description h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.img-intro__description p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.img-intro__button-wrap--mobile {
+  display: none;
+}
+
+.img-intro div.img-intro__wrap-text {
+  margin-top: 60px;
+}
+
 .intro-slider {
   position: absolute;
   content: "";
@@ -2989,7 +3034,7 @@ div.footer__content__social-list a:hover svg {
   line-height: 18px;
   font-weight: 700;
   color: #121211;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid #fdc900;
   border-radius: 4px;
 }
@@ -2999,6 +3044,16 @@ div.footer__content__social-list a:hover svg {
   fill: #121211;
   width: 24px;
   height: 24px;
+}
+
+.description__btn-contract--img-intro,
+.description__btn-requisites--img-intro {
+  color: #ffffff;
+}
+
+.description__btn-contract--img-intro svg,
+.description__btn-requisites--img-intro svg {
+  fill: #ffffff;
 }
 
 .custom-input,
@@ -4448,6 +4503,10 @@ div.footer__content__social-list a:hover svg {
     padding: 22px 30px;
   }
 
+  .img-intro div.img-intro__wrap-text {
+    margin-top: 40px;
+  }
+
   .intro-slider {
     top: 79px;
     left: 145px;
@@ -4719,6 +4778,15 @@ div.footer__content__social-list a:hover svg {
     display: none;
   }
 
+  .img-intro__description {
+    width: 470px;
+    padding: 20px;
+  }
+
+  .img-intro div.img-intro__wrap-text {
+    margin-top: 40px;
+  }
+
   .intro-slider {
     top: 31px;
     left: 69px;
@@ -4919,6 +4987,10 @@ div.footer__content__social-list a:hover svg {
 
   .examples-works__slider {
     margin-bottom: 40px;
+  }
+
+  .img-intro div.img-intro__wrap-text {
+    margin-top: 30px;
   }
 
   .intro-slider {
@@ -5191,6 +5263,30 @@ div.footer__content__social-list a:hover svg {
     margin-bottom: 30px;
   }
 
+  .img-intro__description {
+    width: 100%;
+  }
+
+  .img-intro__description h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .img-intro__description p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .img-intro__button-wrap {
+    display: none;
+  }
+
+  .img-intro__button-wrap--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .intro-slider {
     top: 142px;
     left: 35px;
@@ -5339,6 +5435,16 @@ div.footer__content__social-list a:hover svg {
     order: 1;
     gap: 20px;
     margin-bottom: 19px;
+  }
+
+  .description__btn-contract--img-intro,
+  .description__btn-requisites--img-intro {
+    color: #121211;
+  }
+
+  .description__btn-contract--img-intro svg,
+  .description__btn-requisites--img-intro svg {
+    fill: #121211;
   }
 
   .questions__button {
