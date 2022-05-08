@@ -1644,6 +1644,15 @@ button,
   padding-top: 20px;
 }
 
+.description__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  margin-top: 32px;
+  gap: 30px;
+}
+
 .examples-works {
   position: relative;
   margin-top: 70px;
@@ -1663,8 +1672,8 @@ button,
 .examples-works__item img {
   width: 285px;
   height: 220px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   border-radius: 6px;
 }
 
@@ -2380,6 +2389,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 490px;
   gap: 33px;
 }
 
@@ -2963,6 +2973,32 @@ div.footer__content__social-list a:hover svg {
   padding: 15px 40px 15px 30px;
   height: 50px;
   border-radius: 4px;
+}
+
+.description__btn-contract,
+.description__btn-requisites {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #121211;
+  background-color: #ffffff;
+  border: 2px solid #fdc900;
+  border-radius: 4px;
+}
+
+.description__btn-contract svg,
+.description__btn-requisites svg {
+  fill: #121211;
+  width: 24px;
+  height: 24px;
 }
 
 .custom-input,
@@ -4528,6 +4564,10 @@ div.footer__content__social-list a:hover svg {
     height: 230px;
   }
 
+  .description__btn {
+    width: 610px;
+  }
+
   .examples-works__slider {
     margin-bottom: 50px;
   }
@@ -4754,6 +4794,11 @@ div.footer__content__social-list a:hover svg {
     display: none;
   }
 
+  .footer .footer__contacts__adress,
+  .footer .footer__contacts__mail {
+    gap: 17px;
+  }
+
   .footer__catalog {
     gap: 93px;
   }
@@ -4866,6 +4911,10 @@ div.footer__content__social-list a:hover svg {
     height: 340px;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .description__btn {
+    width: 100%;
   }
 
   .examples-works__slider {
@@ -5059,14 +5108,14 @@ div.footer__content__social-list a:hover svg {
     flex-direction: column;
   }
 
-  .map__text {
+  .map__list__page-Contacts .map__text {
     gap: 17px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
 
-  .map__text p {
+  .map__list__page-Contacts .map__text p {
     text-align: center;
   }
 
@@ -5129,6 +5178,13 @@ div.footer__content__social-list a:hover svg {
   .about-company__content img {
     width: 100%;
     height: 190px;
+  }
+
+  .description__btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .examples-works__slider {

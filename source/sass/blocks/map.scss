@@ -194,15 +194,15 @@
         flex-direction: column;
       }
     }
-  }
 
-  &__text {
-    @include vp-768 {
-      gap: 17px;
-      align-items: center;
-
-      & p {
-        text-align: center;
+    & .map__text {
+      @include vp-768 {
+        gap: 17px;
+        align-items: center;
+  
+        & p {
+          text-align: center;
+        }
       }
     }
   }

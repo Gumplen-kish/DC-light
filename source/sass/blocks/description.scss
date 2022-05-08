@@ -2,4 +2,23 @@
   &__container .section-wrap {
     padding-top: 20px;
   }
+
+  &__btn {
+    display: flex;
+    width: 500px;
+    margin-top: 32px;
+    gap: 30px;
+
+    @include vp-1024 {
+      width: 610px;
+    }
+
+    @include vp-768 {
+      width: 100%;
+    }
+
+    @include vp-576 {
+      flex-direction: column;
+    }
+  }
 }

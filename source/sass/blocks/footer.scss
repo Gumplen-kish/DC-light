@@ -181,6 +181,10 @@
       display: flex;
       align-items: center;
       gap: 20px;
+
+      @include vp-992 {
+        gap: 17px;
+      }
     }
 
     &__mail {
@@ -301,6 +305,7 @@
 
     &__list {
       display: flex;
+      width: 490px;
       gap: 33px;
     }
 

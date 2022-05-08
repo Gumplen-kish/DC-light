@@ -1,0 +1,40 @@
+mixin cooperation-slider(props={})
+  -const {list} = props
+  .examples-works&attributes(attributes)
+    .container.examples-works__container
+      +section-wrap("Наши партнеры","С нами сотрудничают")
+      .examples-works__slider-swiper.swiper
+        .examples-works__slider.swiper-container
+          ul.examples-works__list.swiper-wrapper
+            each elem in examplesDataSlider
+              li.examples-works__item.swiper-slide
+                +img("cooperation-slider", `${elem.index}`, "png", 285, 140, `${elem.alt}`)
+      .examples-works__nav
+        +button({
+          color: "color-whisper",
+          iconData: {
+            position: "center",
+            name: "icon-arrowleft",
+            width: 24,
+            height: 24,
+          } 
+        })(aria-label="Предыдущий слайд").examples-works__button-prev
+        +button({
+          color: "color-whisper",
+          iconData: {
+            position: "center",
+            name: "icon-arrowright",
+            width: 24,
+            height: 24,
+          } 
+        })(aria-label="Следующий слайд").examples-works__button-next
+      +wrap-text()
+      +advantages-list()
+      +wrap-text-border()
+      if(list === true)
+        .wrap-text__list-wrap
+          h4 Вопрос освещения занимает важное место
+          ul.wrap-text__list
+            each elem, index in choiceRuleList
+              li.wrap-text__item
+                p!=elem.text

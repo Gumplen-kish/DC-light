@@ -1,0 +1,9 @@
+mixin advantages-list()
+  +section-wrap("Наши преимущества", "")&attributes(attributes)
+  ul.advantages__list
+    each elem, index in advantagesList
+      li.advantages__item
+        +icon(`icon-${elem.name}`, 64,64).advantages__icon
+        .advantages__item-text
+          h4=elem.title
+          p=elem.text
