@@ -1,0 +1,30 @@
+mixin delivery-slider()
+  .delivery-slider&attributes(attributes)
+    .container.examples-works__container
+      +section-wrap("Службы доставки","Мы доставляем такими службами, как:")
+      .examples-works__slider-swiper.swiper
+        .examples-works__slider.swiper-container
+          ul.examples-works__list.swiper-wrapper
+            each elem in deliveryDataSlider
+              li.examples-works__item.swiper-slide
+                +img("delivery", `${elem.index}`, "png", 285, 220, `${elem.alt}`)
+            //--.examples-works__nav
+              +button({
+                color: "color-whisper",
+                iconData: {
+                  position: "center",
+                  name: "icon-arrowleft",
+                  width: 24,
+                  height: 24,
+                } 
+              })(aria-label="Предыдущий слайд").examples-works__button-prev
+              +button({
+                color: "color-whisper",
+                iconData: {
+                  position: "center",
+                  name: "icon-arrowright",
+                  width: 24,
+                  height: 24,
+                } 
+              })(aria-label="Следующий слайд").examples-works__button-next
+      +wrap-text()

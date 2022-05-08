@@ -1,8 +1,9 @@
 mixin img-intro(props={})
-  - const {title, subTitle,img,alt, titleDesc, textDesc, btnFirstName, btnSecondName} = props
+  - const {title, subTitle,img,alt, titleDesc, textDesc, btnFirstName, btnSecondName, table, sectionWrap} = props
   .img-intro&attributes(attributes)
     .container.img-intro__container
-      +section-wrap(`${title}`, `${subTitle}`)
+      if(sectionWrap === true)
+        +section-wrap(`${title}`, `${subTitle}`)
       .img-intro__wrap
         +img("content", `intro-${img}`, "png", 1230, 320, `${alt}`)
         .img-intro__description
@@ -30,7 +31,7 @@ mixin img-intro(props={})
             }).description__btn-contract.img-intro__btn.description__btn-requisites--img-intro
       .description__btn.img-intro__button-wrap.img-intro__button-wrap--mobile
         +button({
-          text: "Скачать реквизиты",
+          text: `${btnFirstName}`,
           iconData: {
             position: "first",
             name: "icon-requisites",
@@ -40,7 +41,7 @@ mixin img-intro(props={})
         }).description__btn-requisites.description__btn-requisites--img-intro.img-intro__btn
 
         +button({
-          text: "Скачать договор",
+          text: `${btnSecondName}`,
           iconData: {
             position: "first",
             name: "icon-contract",
@@ -49,4 +50,8 @@ mixin img-intro(props={})
           }
         }).description__btn-contract.img-intro__btn.description__btn-requisites--img-intro
       +wrap-text.img-intro__wrap-text.wrap-text
-      
+      if(table === true)
+        .img-intro__table-wrap.table
+          +table({titleLeft: `Доставка в Санкт&nbsp;-&nbsp;Петербурге`, titleRight: "Цена", type: 1})
+
+        

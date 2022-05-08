@@ -83,4 +83,22 @@
       margin-top: 30px;
     }
   }
+
+  &__table-wrap {
+    display: flex;
+    gap: 30px;
+
+    @include vp-1440 {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    @include vp-992 {
+      gap: 40px;
+    }
+
+    @include vp-768 {
+      gap: 30px;
+    }
+  }
 }

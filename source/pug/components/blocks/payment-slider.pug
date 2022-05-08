@@ -1,0 +1,30 @@
+mixin payment-slider()
+  .payment-slider&attributes(attributes)
+    .container.examples-works__container
+      +section-wrap("Мы принимаем к оплате","Вы можете оплатить любым удобный способом:")
+      .examples-works__slider-swiper.swiper
+        .examples-works__slider.swiper-container
+          ul.examples-works__list.swiper-wrapper
+            each elem in paymentDataSlider
+              li.examples-works__item.swiper-slide
+                +img("payment", `${elem.index}`, "png", 285, 220, `${elem.alt}`)
+            //--.examples-works__nav
+              +button({
+                color: "color-whisper",
+                iconData: {
+                  position: "center",
+                  name: "icon-arrowleft",
+                  width: 24,
+                  height: 24,
+                } 
+              })(aria-label="Предыдущий слайд").examples-works__button-prev
+              +button({
+                color: "color-whisper",
+                iconData: {
+                  position: "center",
+                  name: "icon-arrowright",
+                  width: 24,
+                  height: 24,
+                } 
+              })(aria-label="Следующий слайд").examples-works__button-next
+      +wrap-text()

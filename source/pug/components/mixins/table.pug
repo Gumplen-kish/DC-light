@@ -1,0 +1,28 @@
+mixin table(props={})
+  - const {titleLeft, titleRight, type} = props
+    if(type === 1)
+      .table__wrap&attributes(attributes)
+        .table__column
+          .table__column-left
+            h4!=titleLeft
+          .table__column-right
+            h4!=titleRight
+        ul.table__column-list
+          each elem, index in tableDelivery
+            li.table__column-item
+              p!=elem.status
+              p!=elem.period
+      .table__wrap&attributes(attributes)
+        .table__column
+          .table__column-left
+            h4!=titleLeft
+          .table__column-right
+            h4!=titleRight
+        ul.table__column-list
+          each elem, index in tablePrice
+            li.table__column-item
+              p!=elem.status
+              p!=elem.period
+              
+
+      

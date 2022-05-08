@@ -12,8 +12,9 @@ block variables
 block main
   main
     block bread-crumbs
-      +bread-crumbs(aboutUsBc)
+      +bread-crumbs(deliveryBc)
     +img-intro({
+      sectionWrap: true,
       title: "Доставка и оплата",
       subTitle:"Быстро и не дорого",
       img: "delivery",
@@ -22,13 +23,23 @@ block main
       textDesc: "В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.",
       btnFirstName: "Скачать реквизиты",
       btnSecondName: "Скачать договор",
+      table: true,
     })
-    
-
+    +delivery-slider()
+    +img-intro({
+      sectionWrap: false,
+      img: "payment",
+      alt: "Картинка интро оплаты", 
+      titleDesc: "Оплата",
+      textDesc: "В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.",
+      btnFirstName: "Скачать прайс на доставку",
+      btnSecondName: "Скачать пример договора",
+      table: false,
+    })
+    +payment-slider()
     +questions()
     +recently-card-slider()
     +description({title:"О компании", subTitle:"Мы рады Вам", img:"aboutCompany", alt:"Картинка интро"}).about-company
     +map()
-
 
 block modals

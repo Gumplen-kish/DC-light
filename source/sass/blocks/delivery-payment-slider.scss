@@ -1,0 +1,33 @@
+.delivery-slider,
+.payment-slider {
+  background: linear-gradient(to bottom,  rgba(248, 248, 250, 0), rgba(248, 248, 250, 0.65));
+  padding-bottom: 80px;
+
+  @include vp-1280 {
+    padding-bottom: 50px;
+  }
+
+  @include vp-992 {
+    padding-bottom: 40px;
+  }
+
+  @include vp-768 {
+    padding-bottom: 30px;
+  }
+}
+
+.delivery-slider {
+  margin-bottom: 80px;
+
+  @include vp-1280 {
+    margin-bottom: 50px;
+  }
+
+  @include vp-992 {
+    margin-bottom: 40px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 30px;
+  }
+}
