@@ -24,6 +24,7 @@ block main
       btnFirstName: "Скачать реквизиты",
       btnSecondName: "Скачать договор",
       table: true,
+
     })
     +delivery-slider()
     +img-intro({
@@ -37,7 +38,7 @@ block main
       table: false,
     })
     +payment-slider()
-    +questions()
+    +questions("Остались вопросы?", "Напишите нам")
     +recently-card-slider()
     +description({title:"О компании", subTitle:"Мы рады Вам", img:"aboutCompany", alt:"Картинка интро"}).about-company
     +map()

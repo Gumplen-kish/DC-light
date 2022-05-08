@@ -1,5 +1,5 @@
 mixin img-intro(props={})
-  - const {title, subTitle,img,alt, titleDesc, textDesc, btnFirstName, btnSecondName, table, sectionWrap} = props
+  - const {title, subTitle,img,alt, titleDesc, textDesc, btnFirstName, btnSecondName, table, sectionWrap, type, montage} = props
   .img-intro&attributes(attributes)
     .container.img-intro__container
       if(sectionWrap === true)
@@ -52,6 +52,7 @@ mixin img-intro(props={})
       +wrap-text.img-intro__wrap-text.wrap-text
       if(table === true)
         .img-intro__table-wrap.table
-          +table({titleLeft: `Доставка в Санкт&nbsp;-&nbsp;Петербурге`, titleRight: "Цена", type: 1})
-
-        
+          +table-delivery({titleLeft: `Доставка в Санкт&nbsp;-&nbsp;Петербурге`, titleRight: "Цена", type: true })
+      if(montage === true)
+        .img-intro__table-wrap.table
+          +table-montage({titleLeft: "Куда доставляем", titleRight: "Цена", type: true })

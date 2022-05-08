@@ -9,6 +9,14 @@
     border: 1px solid $color-whisper;
     border-radius: 6px;
 
+    &--montage {
+      width: 100%;
+
+      & .table__column-right {
+        width: 120px;
+      }
+    }
+
     @include vp-768 {
       min-width: 290px;
     }

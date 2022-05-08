@@ -1,0 +1,34 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "DC-light_montage" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "montage.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    block bread-crumbs
+      +bread-crumbs(montageBc)
+    +img-intro({
+      sectionWrap: true,
+      title: "Монтаж",
+      subTitle:"Проведем монтаж",
+      img: "montage",
+      alt: "Картинка интро страницы", 
+      titleDesc: "Монтаж",
+      textDesc: "В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.",
+      btnFirstName: "Скачать прайс  на работы",
+      btnSecondName: "Скачать пример договора",
+      montage: true
+    })
+    
+    +questions("Вызвать монтажника", "Мы перезвоним Вам в течении 15 минут")
+    +recently-card-slider()
+    +description({title:"О компании", subTitle:"Мы рады Вам", img:"aboutCompany", alt:"Картинка интро"}).about-company
+    +map()
+
+block modals

@@ -1,6 +1,6 @@
-mixin questions()
+mixin questions(title, subTitle)
   .container.questions&attributes(attributes)
-    +section-wrap("Остались вопросы", "Напишите нам")
+    +section-wrap(`${title}`, `${subTitle}`)
     form(action="#", method="post").questions__form
       .questions__input-wrap
         +custom-input({inputType: "text", inputPlaceholder: "Ваше имя", inputError: "Не корректное имя", inputName: "user-name", inputMinLength: "2"})(data-validate-type="text", data-limitations="name")

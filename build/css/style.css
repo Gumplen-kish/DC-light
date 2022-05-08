@@ -4469,6 +4469,14 @@ div.footer__content__social-list a:hover svg {
   border-radius: 6px;
 }
 
+.table__wrap--montage {
+  width: 100%;
+}
+
+.table__wrap--montage .table__column-right {
+  width: 120px;
+}
+
 .table__column {
   display: -webkit-box;
   display: -ms-flexbox;

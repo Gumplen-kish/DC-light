@@ -1,6 +1,6 @@
-mixin table(props={})
+mixin table-delivery(props={})
   - const {titleLeft, titleRight, type} = props
-    if(type === 1)
+    if(type === true)
       .table__wrap&attributes(attributes)
         .table__column
           .table__column-left
@@ -23,6 +23,4 @@ mixin table(props={})
             li.table__column-item
               p!=elem.status
               p!=elem.period
-              
-
-      
+    

@@ -1,0 +1,14 @@
+mixin table-montage(props={})
+  - const {titleLeft, titleRight} = props
+  .table__wrap.table__wrap--montage&attributes(attributes)
+    .table__column
+      .table__column-left
+        h4!=titleLeft
+      .table__column-right
+        h4!=titleRight
+    ul.table__column-list
+      each elem, index in tableMontage
+        li.table__column-item
+          p!=elem.status
+          p!=elem.price
+    
