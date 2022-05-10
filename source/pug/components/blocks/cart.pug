@@ -1,0 +1,41 @@
+mixin cart()
+  .cart
+    .container.cart__container
+      .cart__section-wrap
+        +section-wrap("Корзина","Ваши товары")
+        +button({
+          color: "color-transparent",
+          text: "Очистить корзину",
+          iconData: {
+            position: "first",
+            name: "icon-close",
+            width: 8,
+            height: 8
+          }
+        }).cart__clear-btn
+      .cart__content
+        .cart__list-wrap
+          ul.cart__list
+            each elem in cartList.card
+              li.cart__item
+                +product-card-horizontal(elem)
+          +pagination-btn().cart__pagination
+        .cart__info
+          .cart__info-order
+            p О заказе
+            .cart__info-order__body
+              span!=`${count}`
+              span позиций весом
+              span!=`${weight}`
+              span кг
+          .cart__info-total
+            p О заказе
+            .cart__info-total__body
+              p Итого:
+              span!=`${cost}`
+              span ₽
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Оформить заказ",
+          })
+              

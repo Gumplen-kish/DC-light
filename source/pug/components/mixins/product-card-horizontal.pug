@@ -1,0 +1,58 @@
+mixin product-card-horizontal(options={})
+  a(href=options.href aria-label=`Перейти на страницу ${options.name}`)
+    .product-card-horizontal
+      .product-card-horizontal__wrap-img
+        +img("product", options.img, "png", 245, 170, "Фото продукта")
+        case options.status
+          when 1
+            span.product-card-horizontal__span.intro-slider__span.intro-slider__span--stock Акция
+          when 2
+            span.product-card-horizontal__span.intro-slider__span.intro-slider__span--hit Хит
+          when 3
+            span.product-card-horizontal__span.intro-slider__span.intro-slider__span--new Новинка
+          when 4
+            span.product-card-horizontal__span.intro-slider__span.intro-slider__span--profitably Выгодно
+        .product-card-horizontal__info
+          span.product-small__span-lk=options.lk 
+          h3=options.name 
+          .product-card-horizontal__rating.product-small__rating
+            ul.product-small__list-star
+              li.product-card__star.product-card__star--blue
+                +icon('icon-star', 14, 13)
+              li.product-card__star.product-card__star--blue
+                +icon('icon-star', 14, 13)
+              li.product-card__star.product-card__star--blue
+                +icon('icon-star', 14, 13)
+              li.product-card__star.product-card__star--half
+                +icon('icon-starhalf', 14, 13)
+              li.product-card__star.product-card__star-gray
+                +icon('icon-stargray', 14, 13)
+            span.product-small__span-raiting.product-card-horizontal__span-raiting 4.05
+      .product-card-horizontal__count
+        .cart__quantity.cart-quantity
+          .cart-quantity__form-item
+            +button({
+              iconData: {
+                position: "center",
+                name: "icon-minus",
+              }
+            })(data-direction="minus").cart-quantity__button--minus.cart-quantity__button
+            +custom-input({inputType:"number", inputName:"quantity", inputValue:"1"})
+            +button({
+              iconData: {
+                position: "center",
+                name: "icon-plus",
+              }
+            })(data-direction="plus").cart-quantity__button--plus.cart-quantity__button
+      .product-card-horizontal__price
+        +button({
+          color: "color-transparent",
+          text: "Удалить",
+          iconData: {
+            position: "first",
+            name: "icon-close",
+            width: 8,
+            height: 8
+          }
+        }).product-card-horizontal__btn-delete
+        span.product-card-horizontal__price-span.product-card-horizontal__price-span--new=options.newPrice

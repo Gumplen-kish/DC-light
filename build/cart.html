@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>DC-light_delivery</title>
+    <title>DC-light_about-us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -243,13 +243,13 @@
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="about-us.html">О компании</a>
+                <li class="main-nav__item"><span class="main-nav__link is-active">О компании</span>
                 </li>
                 <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a>
                 </li>
                 <li class="main-nav__item"><a class="main-nav__link" href="cooperation.html">Сотрудничество</a>
                 </li>
-                <li class="main-nav__item"><span class="main-nav__link is-active">Доставка и оплата</span>
+                <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка и оплата</a>
                 </li>
                 <li class="main-nav__item"><a class="main-nav__link" href="montage.html">Монтаж</a>
                 </li>
@@ -383,243 +383,471 @@
         <div class="container container--no-padding-tm">
           <ol class="bread-crumbs">
             <li class="bread-crumbs__it"><a href="index.html">Главная</a></li>
-            <li class="bread-crumbs__it bread-crumbs__it--active"><a>Доставка и оплата</a></li>
+            <li class="bread-crumbs__it bread-crumbs__it--active"><a>Корзина</a></li>
           </ol>
         </div>
-        <div class="img-intro">
-          <div class="container img-intro__container">
-            <section class="section-wrap">
-              <h2>Доставка и оплата</h2>
-              <p class="section-wrap__text">Быстро и не дорого</p>
-            </section>
-            <div class="img-intro__wrap"><img src="img/content/intro-delivery.png" srcset="img/content/intro-delivery@2x.png 2x" width="1230" height="320" alt="Картинка интро страницы">
-              <div class="img-intro__description">
-                <h3>Доставка</h3>
-                <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.</p>
-                <div class="description__btn img-intro__button-wrap">
-                  <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
-                    <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="#icon-requisites"></use>
-                    </svg><span>Скачать реквизиты</span>
+        <div class="cart">
+          <div class="container cart__container">
+            <div class="cart__section-wrap">
+              <section class="section-wrap">
+                <h2>Корзина</h2>
+                <p class="section-wrap__text">Ваши товары</p>
+              </section>
+              <button class="button button--color-transparent  cart__clear-btn" type="button">
+                <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                  <use xlink:href="#icon-close"></use>
+                </svg><span>Очистить корзину</span>
+              </button>
+            </div>
+            <div class="cart__content">
+              <div class="cart__list-wrap">
+                <ul class="cart__list">
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--hit">Хит</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--stock">Акция</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--profitably">Выгодно</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/1.png" srcset="img/product/1@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--new">Новинка</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--new">Новинка</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                  <li class="cart__item"><a href="ee" aria-label="Перейти на страницу Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...">
+                      <div class="product-card-horizontal">
+                        <div class="product-card-horizontal__wrap-img"><img src="img/product/2.png" srcset="img/product/2@2x.png 2x" width="245" height="170" alt="Фото продукта"><span class="product-card-horizontal__span intro-slider__span intro-slider__span--stock">Акция</span>
+                          <div class="product-card-horizontal__info"><span class="product-small__span-lk">ЛК: 41001544</span>
+                            <h3>Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x1...</h3>
+                            <div class="product-card-horizontal__rating product-small__rating">
+                              <ul class="product-small__list-star">
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--blue">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star--half">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-starhalf"></use>
+                                  </svg>
+                                </li>
+                                <li class="product-card__star product-card__star-gray">
+                                  <svg width="14" height="13" aria-hidden="true">
+                                    <use xlink:href="#icon-stargray"></use>
+                                  </svg>
+                                </li>
+                              </ul><span class="product-small__span-raiting product-card-horizontal__span-raiting">4.05</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__count">
+                          <div class="cart__quantity cart-quantity">
+                            <div class="cart-quantity__form-item">
+                              <button class="button button--gray  cart-quantity__button--minus cart-quantity__button" type="button" data-direction="minus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-minus"></use>
+                                </svg>
+                              </button>
+                              <div class="custom-input">
+                                <label><span class="custom-input__label"></span>
+                                  <input type="number" name="quantity" value="1">
+                                </label>
+                              </div>
+                              <button class="button button--gray  cart-quantity__button--plus cart-quantity__button" type="button" data-direction="plus"><span></span>
+                                <svg aria-hidden="true">
+                                  <use xlink:href="#icon-plus"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-card-horizontal__price">
+                          <button class="button button--color-transparent  product-card-horizontal__btn-delete" type="button">
+                            <svg class="button__icon-first" width="8" height="8" aria-hidden="true">
+                              <use xlink:href="#icon-close"></use>
+                            </svg><span>Удалить</span>
+                          </button><span class="product-card-horizontal__price-span product-card-horizontal__price-span--new">1 670 ₽</span>
+                        </div>
+                      </div></a>
+                  </li>
+                </ul>
+                <div class="pagination-btn cart__pagination">
+                  <button class="button button--color-whisper  pagination-btn__btn pagination-btn__btn--prev" type="button" aria-label="Предыдущий"><span></span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-arrowleft"></use>
+                    </svg>
                   </button>
-                  <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
+                  <ul class="pagination-btn__list">
+                    <li class="pagination-btn__it"><a class="pagination-btn__link pagination-btn__link--active">1</a>
+                    </li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">2</a>
+                    </li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">3</a>
+                    </li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">4</a>
+                    </li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">5</a>
+                    </li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link pagination-btn__link--more">...</a></li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">24</a></li>
+                    <li class="pagination-btn__it"><a class="pagination-btn__link">25</a></li>
+                  </ul>
+                  <button class="button button--color-whisper  pagination-btn__btn pagination-btn__btn--prev" type="button" aria-label="Следующий"><span></span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#icon-arrowright"></use>
+                    </svg>
+                  </button>
+                  <button class="button button--color-tangerine-yellow  pagination-btn__show-more" type="button" aria-label="Следующий">
                     <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="#icon-contract"></use>
-                    </svg><span>Скачать договор</span>
+                      <use xlink:href="#icon-points"></use>
+                    </svg><span>Показать ещё</span>
                   </button>
                 </div>
               </div>
-            </div>
-            <div class="description__btn img-intro__button-wrap img-intro__button-wrap--mobile">
-              <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
-                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="#icon-requisites"></use>
-                </svg><span>Скачать реквизиты</span>
-              </button>
-              <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
-                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="#icon-contract"></use>
-                </svg><span>Скачать договор</span>
-              </button>
-            </div>
-            <div class="wrap-text__text img-intro__wrap-text wrap-text">
-              <h3>Мы расскажем о правилах выбора</h3>
-              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
-              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
-            </div>
-            <div class="img-intro__table-wrap table">
-              <div class="table__wrap">
-                <div class="table__column">
-                  <div class="table__column-left">
-                    <h4>Доставка в Санкт&nbsp;-&nbsp;Петербурге</h4>
-                  </div>
-                  <div class="table__column-right">
-                    <h4>Цена</h4>
+              <div class="cart__info">
+                <div class="cart__info-order">
+                  <p>О заказе</p>
+                  <div class="cart__info-order__body"><span>6</span><span>позиций весом</span><span>8</span><span>кг</span></div>
+                </div>
+                <div class="cart__info-total">
+                  <p>О заказе</p>
+                  <div class="cart__info-total__body">
+                    <p>Итого:</p><span>90000</span><span>₽</span>
                   </div>
                 </div>
-                <ul class="table__column-list">
-                  <li class="table__column-item">
-                    <p>В наличии</p>
-                    <p>доставка - 1-3 дня</p>
-                  </li>
-                  <li class="table__column-item">
-                    <p>Под заказ</p>
-                    <p>доставка - 3-7 дней</p>
-                  </li>
-                  <li class="table__column-item">
-                    <p>Самовывоз</p>
-                    <p>через 1-2 дня</p>
-                  </li>
-                  <li class="table__column-item">
-                    <p>Самовывоз СДЭК</p>
-                    <p>через 2-3 дня</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="table__wrap">
-                <div class="table__column">
-                  <div class="table__column-left">
-                    <h4>Доставка в Санкт&nbsp;-&nbsp;Петербурге</h4>
-                  </div>
-                  <div class="table__column-right">
-                    <h4>Цена</h4>
-                  </div>
-                </div>
-                <ul class="table__column-list">
-                  <li class="table__column-item">
-                    <p>В пределах КАД при заказе<br>от 10 000 руб</p>
-                    <p>Бесплатно</p>
-                  </li>
-                  <li class="table__column-item">
-                    <p>В пределах КАД при заказе<br>до 10 000 руб</p>
-                    <p>500 руб</p>
-                  </li>
-                  <li class="table__column-item">
-                    <p>В пределах КАД при заказе<br>до 20 000 руб</p>
-                    <p>500 руб + 20 руб/км</p>
-                  </li>
-                </ul>
+                <button class="button button--color-tangerine-yellow " type="button"><span>Оформить заказ</span>
+                </button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="delivery-slider">
-          <div class="container examples-works__container">
-            <section class="section-wrap">
-              <h2>Службы доставки</h2>
-              <p class="section-wrap__text">Мы доставляем такими службами, как:</p>
-            </section>
-            <div class="examples-works__slider-swiper swiper">
-              <div class="examples-works__slider swiper-container">
-                <ul class="examples-works__list swiper-wrapper">
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/1.png" srcset="img/delivery/1@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/2.png" srcset="img/delivery/2@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/3.png" srcset="img/delivery/3@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/4.png" srcset="img/delivery/4@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/3.png" srcset="img/delivery/3@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/delivery/4.png" srcset="img/delivery/4@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="wrap-text__text">
-              <h3>Мы расскажем о правилах выбора</h3>
-              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
-              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
-            </div>
-          </div>
-        </div>
-        <div class="img-intro">
-          <div class="container img-intro__container">
-            <div class="img-intro__wrap"><img src="img/content/intro-payment.png" srcset="img/content/intro-payment@2x.png 2x" width="1230" height="320" alt="Картинка интро оплаты">
-              <div class="img-intro__description">
-                <h3>Оплата</h3>
-                <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора.</p>
-                <div class="description__btn img-intro__button-wrap">
-                  <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
-                    <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="#icon-requisites"></use>
-                    </svg><span>Скачать прайс на доставку</span>
-                  </button>
-                  <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
-                    <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="#icon-contract"></use>
-                    </svg><span>Скачать пример договора</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="description__btn img-intro__button-wrap img-intro__button-wrap--mobile">
-              <button class="button button--gray  description__btn-requisites description__btn-requisites--img-intro img-intro__btn" type="button">
-                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="#icon-requisites"></use>
-                </svg><span>Скачать прайс на доставку</span>
-              </button>
-              <button class="button button--gray  description__btn-contract img-intro__btn description__btn-requisites--img-intro" type="button">
-                <svg class="button__icon-first" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="#icon-contract"></use>
-                </svg><span>Скачать пример договора</span>
-              </button>
-            </div>
-            <div class="wrap-text__text img-intro__wrap-text wrap-text">
-              <h3>Мы расскажем о правилах выбора</h3>
-              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
-              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
-            </div>
-          </div>
-        </div>
-        <div class="payment-slider">
-          <div class="container examples-works__container">
-            <section class="section-wrap">
-              <h2>Мы принимаем к оплате</h2>
-              <p class="section-wrap__text">Вы можете оплатить любым удобный способом:</p>
-            </section>
-            <div class="examples-works__slider-swiper swiper">
-              <div class="examples-works__slider swiper-container">
-                <ul class="examples-works__list swiper-wrapper">
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/1.png" srcset="img/payment/1@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/2.png" srcset="img/payment/2@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/3.png" srcset="img/payment/3@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/4.png" srcset="img/payment/4@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/3.png" srcset="img/payment/3@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                  <li class="examples-works__item swiper-slide"><img src="img/payment/4.png" srcset="img/payment/4@2x.png 2x" width="285" height="220" alt="фото">
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="wrap-text__text">
-              <h3>Мы расскажем о правилах выбора</h3>
-              <p>Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.</p>
-              <p>В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.</p>
-            </div>
-          </div>
-        </div>
-        <div class="container questions">
-          <section class="section-wrap">
-            <h2>Остались вопросы?</h2>
-            <p class="section-wrap__text">Напишите нам</p>
-          </section>
-          <form class="questions__form" action="#" method="post">
-            <div class="questions__input-wrap">
-              <div class="custom-input" data-validate-type="text" data-limitations="name">
-                <label><span class="custom-input__label"></span>
-                  <input type="text" name="user-name" minlength="2" placeholder="Ваше имя">
-                  <div class="custom-input__error">Не корректное имя</div>
-                </label>
-              </div>
-              <div class="custom-input" data-validate-type="phone">
-                <label><span class="custom-input__label"></span>
-                  <input type="tel" name="user-phone" placeholder="Ваш телефон">
-                  <div class="custom-input__error">Не корректный телефон</div>
-                </label>
-              </div>
-              <div class="custom-input" data-validate-type="email">
-                <label><span class="custom-input__label"></span>
-                  <input type="email" name="user-email" placeholder="Ваша почта">
-                  <div class="custom-input__error">Не корректный email</div>
-                </label>
-              </div>
-            </div>
-            <div class="questions__textarea-wrap">
-              <div class="custom-textarea">
-                <label>
-                  <textarea placeholder="Текст сообщения"></textarea>
-                </label>
-              </div>
-            </div>
-            <button class="button button--color-tangerine-yellow  questions__button" type="submit"><span>Отправить</span>
-            </button>
-          </form>
         </div>
         <div class="container recently-card">
           <section class="section-wrap recently-card-slider">
