@@ -326,6 +326,17 @@
     height: 24px;
   }
 
+  &:hover {
+    border-color: $color-selective-yellow;
+    color: $color-selective-yellow;
+    transition: all 0.6s ease;
+
+    & svg {
+      fill: $color-selective-yellow;
+      transition: fill 0.6s ease;
+    }
+  }
+
   &--img-intro {
     color: $color-default-white;
 

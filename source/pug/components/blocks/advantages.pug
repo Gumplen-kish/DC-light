@@ -1,6 +1,8 @@
-mixin advantages()
+mixin advantages(props={})
+  - const {wrapTextBorder} = props
   .advantages&attributes(attributes)
     .container.advantages__container
       +advantages-list()
-      +wrap-text-border()
+      if(wrapTextBorder === true)
+        +wrap-text-border()
       

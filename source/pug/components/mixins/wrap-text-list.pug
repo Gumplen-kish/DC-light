@@ -1,0 +1,5 @@
+mixin wrap-text-list()
+  ul.wrap-text__list
+    each elem, index in choiceRuleList
+      li.wrap-text__item
+        p!=elem.text

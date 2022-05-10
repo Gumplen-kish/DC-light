@@ -1,0 +1,12 @@
+mixin text-list-img(props={})
+  - const{title, text, imgName, imgAlt} = props
+  .text-list-img
+    .container.text-list-img__container
+      .text-list-img__text-wrap
+        h4!=title
+        p!=text
+        ul.text-list-img__list
+          each elem, index in montageTextList
+            li.text-list-img__item
+              p!=elem.li
+      +img("content", `${imgName}`, "png", 438, 478, `${imgAlt}`)

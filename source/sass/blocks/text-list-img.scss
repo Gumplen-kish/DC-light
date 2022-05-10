@@ -1,0 +1,124 @@
+.text-list-img {
+  &__container {
+    position: relative;
+    display: flex;
+
+    @include vp-576 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text-wrap {
+    margin-top: 70px;
+
+    & h4 {
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: 800;
+      margin: 0;
+      margin-bottom: 20px;
+
+      @include vp-1024 {
+        margin-bottom: 15px;
+      }
+
+      @include vp-768 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      @include vp-576 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    & p {
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 30px;
+    margin-top: 40px;
+    max-width: 600px;
+
+    @include vp-992 {
+      max-width: 100%;
+      margin-top: 132px;
+      margin-bottom: 154px;
+      gap: 5px 276px;
+    }
+
+    @include vp-768 {
+      margin-top: 55px;
+      margin-bottom: 50px;
+      grid-template-columns: auto;
+      gap: 5px;
+    }
+
+    @include vp-576 {
+      margin-top: 33px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    padding-left: 14px;
+    max-width: max-content;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40%;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $color-selective-yellow;
+    }
+
+    & p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+    }
+  }
+
+  & img {
+    width: 438px;
+    height: 478px;
+
+    @include vp-1024 {
+      width: 400px;
+      height: 436px;
+    }
+
+    @include vp-992 {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 25%;
+      width: 335px;
+      height: 365px;
+    }
+
+    @include vp-768 {
+      width: 259px;
+      height: 282px;
+      left: 50%;
+    }
+
+    @include vp-576 {
+      position: initial;
+    }
+  }
+}
