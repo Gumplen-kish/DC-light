@@ -1,11 +1,24 @@
 .product-small {
   width: 100%;
   max-width: 285px;
+  min-width: 240px;
   padding: 20px;
   border-radius: 6px;
   border: 1px solid $color-whisper;
   box-sizing: border-box;
   font-family: $ff-manrope;
+
+  @include vp-1024 {
+    max-width: 290px;
+  }
+
+  @include vp-992 {
+    max-width: 330px;
+  }
+
+  @include vp-992 {
+    width: 240px;
+  }
 
   &__wrap-img {
     position: relative;

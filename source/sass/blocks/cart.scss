@@ -9,11 +9,106 @@
       max-width: 100%;
     }
 
+    @include vp-576 {
+      justify-content: center;
+    }
+
     & p {
       margin-bottom: 0;
     }
   }
+  //Корзина -оформлено
+  &__sold-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
 
+    @include vp-1280 {
+      margin-top: 45px;
+      margin-bottom: 50px;
+    }
+
+    @include vp-992 {
+      margin-top: 40px;
+    }
+
+    @include vp-768 {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    @include vp-576 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__sold-text-wrap {
+    text-align: center;
+    padding: 60px;
+    border: 1px solid $color-whisper;
+    border-radius: 6px;
+
+    @include vp-992 {
+      padding: 30px;
+    }
+
+    & p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+    }
+  }
+
+  &__sold-title-wrap {
+    display: flex;
+    justify-content: center;
+    
+    
+    & h3,
+    & span {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 33px;
+      color: $color-maire;
+      margin: 0;
+      margin-bottom: 20px;
+
+      @include vp-992 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    } 
+  }
+
+  &__sold-btn-wrap {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px;
+
+    & button {
+      border-radius: 4px;
+    }
+
+    @include vp-1024 {
+      margin-top: 50px;
+    }
+
+    @include vp-768 {
+      margin-top: 40px;
+    }
+
+    @include vp-576 {
+      margin-top: 30px;
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+  //
 
   &__content {
     display: flex;

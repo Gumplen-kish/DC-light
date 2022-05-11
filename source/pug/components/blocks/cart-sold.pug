@@ -1,0 +1,33 @@
+mixin cart-sold()
+  .cart
+    .container.cart__container
+      .cart__section-wrap
+        +section-wrap("Корзина","Ваши товары")
+      .cart__sold-content
+        .cart__sold-text-wrap
+          .cart__sold-title-wrap
+            h3 Ваш заказ №
+              span!=`${numberOrder}`
+              span успешно оформлен
+          p Наши менеджеры свяжутся с Вами по телефону для подтверждения заказа. Спасибо что выбрали наш магазин.
+        .cart__sold-btn-wrap
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Оплатить заказ",
+            iconData: {
+              name: "icon-tick",
+              position: "first",
+              width: 24,
+              height: 24
+            }
+          })
+          +button({
+            color: "color-tangerine-yellow",
+            text: "Перейти в каталог",
+            iconData: {
+              name: "icon-catalog",
+              position: "first",
+              width: 24,
+              height: 24
+            }
+          })
