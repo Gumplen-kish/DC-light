@@ -1,4 +1,4 @@
-mixin cart()
+mixin cart-registration()
   .cart
     .container.cart__container
       .cart__section-wrap
@@ -14,10 +14,7 @@ mixin cart()
           }
         }).cart__clear-btn
       .cart__content
-        .cart__list-wrap
-          ul.cart__list
-            each elem in cartList.card
-              li.cart__item
-                +product-card-horizontal(elem)
-          +pagination-btn().cart__pagination
+        .cart__form-wrap
+          form(action="#", method="post") 
+
         +cart-info()

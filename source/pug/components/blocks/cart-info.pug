@@ -1,0 +1,28 @@
+mixin cart-info()
+  .cart__info
+    .cart__info-wrap
+      .cart__info-order
+        p О заказе
+        .cart__info-order__body
+          span!=`${count}`
+          span позиций весом
+          span!=`${weight}`
+          span кг
+        .cart__info-total
+          p О заказе
+          .cart__info-total__body
+            p Итого:
+            span!=`${cost}`
+            span ₽
+      +button({
+        color: "color-tangerine-yellow",
+        text: "Оформить заказ",
+      }).cart__place-order-btn
+    .cart__add-service
+      h4 Хотите добавить услугу на монтажные работы?
+      p Цену уточняйте по телефону у менеджера при подтверждении заказа.
+      +button({
+        color: "color-tangerine-yellow",
+        text: "Добавить услугу",
+      }).cart__add-service-btn
+      +img("content", "intro-serviceBlock", "png", 229,242, "Интро блока добавить сервис")
