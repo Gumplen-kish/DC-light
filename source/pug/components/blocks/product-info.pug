@@ -1,0 +1,79 @@
+mixin product-info()
+  .product-info
+    .container.product-info__container
+      .product-info__title-wrap 
+        h2.product-info__title Встраиваемые светильники для ламп GX53 Ecola GX53-H4-GL светильник без рефл. глубокий Белый 48x106 FW53GLECB 4680287544105
+        p.product-info__span-lk Артикул: 
+          span 234-783201
+      .product-info__content
+        .product-info__img
+          .product-info__full
+            +img("product", "1", "png", 519,320, "Фото товара")
+            span.product-info__status.product-info__status--stock Акция
+          .product-info__small
+            ul.product-info__small-list
+              li.product-info__small-item
+                +img("product", "1", "png", 102,63, "Фото товара")
+              li.product-info__small-item
+                +img("product", "1", "png", 102,63, "Фото товара")
+              li.product-info__small-item
+                +img("product", "1", "png", 102,63, "Фото товара")
+              li.product-info__small-item
+                +img("product", "1", "png", 102,63, "Фото товара")
+        .product-info__description
+          .product-info__description-btn
+            .product-small__rating.product-info__rating
+              ul.product-small__list-star.product-info__list-star
+                li.product-card__star.product-info__star.product-card__star--blue
+                  +icon('icon-star', 14, 13)
+                li.product-card__star.product-info__star.product-card__star--blue
+                  +icon('icon-star', 14, 13)
+                li.product-card__star.product-info__star.product-card__star--blue
+                  +icon('icon-star', 14, 13)
+                li.product-card__star.product-info__star.product-card__star--half
+                  +icon('icon-starhalf', 14, 13)
+                li.product-card__star.product-info__star.product-card__star-gray
+                  +icon('icon-stargray', 14, 13)
+              span.product-small__span-raiting.product-info__span-rating 4.05
+            p Отзывы
+              span (654)
+            +button({
+              color: "color-transparent",
+              text: "Добавить в избранное",
+              iconData: {
+                position: "first",
+                name: "icon-flag",
+                width: 24,
+                height: 24,
+              }
+            }).product-info__add-favourites
+          .product-info__text-description 
+            h3 Описание
+            p Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире.
+          .product-info__text-specifications
+            h3 Характеристики
+            .product-info__characteristic.product-small__characteristic
+              dl
+                dt Страна производства товара
+                div
+                dd Китай
+              dl
+                dt Размер изделия	
+                div
+                dd 470х445х305мм
+              dl
+                dt Цвет
+                div
+                dd серый
+              dl
+                dt Материал
+                div
+                dd пластик
+              dl
+                dt Цвет
+                div
+                dd серый
+              dl
+                dt Материал
+                div
+                dd пластик
