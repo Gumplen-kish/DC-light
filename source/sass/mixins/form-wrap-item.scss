@@ -1,0 +1,13 @@
+.form__wrap-item {
+  padding: 30px 30px 50px 30px;
+  border: 1px solid $color-whisper;
+
+  & h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $color-black-pearl;
+  }
+}

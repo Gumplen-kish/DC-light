@@ -23,6 +23,7 @@
 @import "blocks/about-company";
 @import "blocks/description";
 @import "blocks/delivery-payment-slider";
+@import "blocks/form-cart";
 @import "blocks/examples-works";
 @import "blocks/header";
 @import "blocks/img-intro";
@@ -51,6 +52,7 @@
 
 //Mixins
 @import "mixins/checkbox";
+@import "mixins/form-wrap-item";
 @import "mixins/pagination-btn";
 @import "mixins/product-card-horizontal";
 @import "mixins/radio";

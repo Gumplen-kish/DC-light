@@ -15,6 +15,112 @@ mixin cart-registration()
         }).cart__clear-btn
       .cart__content
         .cart__form-wrap
-          form(action="#", method="post") 
+          form(action="#", method="post").cart__form.form
+            +form-wrap-item("Ваши контакты").form__contacts
+              .form__input-wrap
+                +custom-input({
+                  inputName: "forename",
+                  inputType: "text",
+                  inputPlaceholder: "Имя*",
+                  inputError: "Введите ваше имя!",
+                  inputMinLength: 2,
+                  inputMaxLength: 17,
+                })
+                +custom-input({
+                  inputName: "surname",
+                  inputType: "text",
+                  inputPlaceholder: "Фамилия*",
+                  inputError: "Введите вашу фамилию!",
+                  inputMinLength: 2,
+                  inputMaxLength: 17,
+                })
+                +custom-input({
+                  inputName: "phone",
+                  inputType: "tel",
+                  inputPlaceholder: "Телефон*",
+                  inputError: "Введите ваш номер телефона!",
+                  inputMinLength: 15,
+                  inputMaxLength: 15,
+                })
+                +custom-input({
+                  inputName: "mail",
+                  inputType: "text",
+                  inputPlaceholder: "Почта",
+                  inputError: "Введите ваш номер телефона!",
+                })
+            +form-wrap-item("Выбрать тип доставки").form__type-delivery
+              ul.form__list-delivery
+                li.form__item-delivery
+                  label.radio.form__label-delivery
+                    input(type="radio" id="1" name="delivery" checked)
+                    span.radio__custom
+                    span.radio__text Самовывоз
+                li.form__item-delivery
+                  label.radio.form__label-delivery
+                    input(type="radio" id="2" name="delivery" )
+                    span.radio__custom
+                    span.radio__text Доставка курьером
+                li.form__item-delivery
+                  label.radio.form__label-delivery
+                    input(type="radio" id="3" name="delivery")
+                    span.radio__custom
+                    span.radio__text СДЭК
+                li.form__item-delivery
+                  label.radio.form__label-delivery
+                    input(type="radio" id="4" name="delivery")
+                    span.radio__custom
+                    span.radio__text Деловые линии
+            +form-wrap-item("Адрес доставки").form__adress
+              .form__input-wrap
+                +custom-input({
+                  inputName: "city",
+                  inputType: "text",
+                  inputPlaceholder: "Город",
+                  inputError: "Введите ваш город!",
+                  inputMinLength: 2,
+                  inputMaxLength: 27,
+                })
+                +custom-input({
+                  inputName: "street",
+                  inputType: "text",
+                  inputPlaceholder: "Улица",
+                  inputError: "Введите вашу улицу!",
+                  inputMinLength: 2,
+                  inputMaxLength: 27,
+                })
+                +custom-input({
+                  inputName: "number-house",
+                  inputType: "number",
+                  inputPlaceholder: "Дом",
+                  inputError: "Введите ваш номер дома!",
+                  inputMinLength: 1,
+                  inputMaxLength: 4,
+                })
+                +custom-input({
+                  inputName: "flat",
+                  inputType: "number",
+                  inputPlaceholder: "Квартира/офис",
+                  inputError: "Введите номер квартиры/офиса!",
+                })
+              +custom-textarea({
+                inputPlaceholder: "Комментарий",
+              })
 
+            +form-wrap-item("Выбрать способ оплаты").form__type-payment
+              ul.form__list-payment
+                li.form__item-payment
+                  label.radio.form__label-payment
+                    input(type="radio" id="1" name="payment" checked)
+                    span.radio__custom
+                    span.radio__text Оплата онлайн
+                li.form__item-payment
+                  label.radio.form__label-payment
+                    input(type="radio" id="2" name="payment" )
+                    span.radio__custom
+                    span.radio__text Картой при получении
+                li.form__item-payment
+                  label.radio.form__label-payment
+                    input(type="radio" id="3" name="payment")
+                    span.radio__custom
+                    span.radio__text Наличными
         +cart-info()

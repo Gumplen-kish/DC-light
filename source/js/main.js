@@ -7,6 +7,7 @@ import {initSliderHit} from './modules/swiper-slider/slider-main';
 import {initExamplesSlider} from './modules/swiper-slider/slider-examples';
 import {initPhoheMask} from './modules/form/mask';
 import {counterPr} from './modules/form/counter';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
