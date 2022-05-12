@@ -7,6 +7,9 @@ import {initSliderHit} from './modules/swiper-slider/slider-main';
 import {initExamplesSlider} from './modules/swiper-slider/slider-examples';
 import {initPhoheMask} from './modules/form/mask';
 import {counterPr} from './modules/form/counter';
+import {tabOrder} from './modules/tab';
+import {initSliderSimilar} from './modules/swiper-slider/slider-similar';
+import {initSliderBuy} from './modules/swiper-slider/slider-buy';
 
 // ---------------------------------
 
@@ -29,8 +32,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiperMain();
     initSliderHit();
     initExamplesSlider();
+    initSliderSimilar();
     initPhoheMask();
     counterPr();
+    tabOrder();
+    initSliderBuy();
   });
 });
 

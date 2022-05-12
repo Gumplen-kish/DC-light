@@ -1,0 +1,78 @@
+mixin product-tab()
+  .product-tab
+    .product-tab__container.container
+      .product-tab__btn-wrap
+        +button({
+          color: "color-transparent",
+          text: "Описание",
+        })(data-tab="description").product-tab__btn
+        +button({
+          color: "color-transparent",
+          text: "Характеристики",
+        })(data-tab="specifications").product-tab__btn
+        +button({
+          color: "color-transparent",
+          text: "Дополнительные возможности",
+        })(data-tab="features").product-tab__btn
+        +button({
+          color: "color-transparent",
+          text: "Отзывы",
+        }).product-tab__btn
+      #description.product-tab__item-description.product-tab__item
+        h3 Описание
+        p Правильно подобранные и расположенные элементы освещения влияют на атмосферу и настроение помещения, а также придают последнему неповторимый индивидуальный характер. Вопрос освещения занимает важное место в мире дизайна. Именитые фабрики, такие как FLOS, LOUIS POULSEN, VIBIA, Catellani & Smith, Brand van Egmond, Lasvit и др., превращают производство осветительных приборов в настоящую философию света и создают дизайнерские светильники, которые находят своё место в самых разных интерьерах и экстерьерах.
+        p В нашем блоге будет много статей об использовании разных типов светильников. Мы расскажем о правилах выбора, затронем моменты совместимости ламп и светильников, не забудем о технических аспектах. Но без знания теории и классификации сложно жить. Давайте немного в неё погрузимся.
+
+      #specifications.product-tab__item-specifications.product-small__characteristic.product-info__characteristic.product-tab__item.visually-hidden
+        h3 Характеристики
+        dl
+          dt Страна производства товара
+          div
+          dd Китай
+        dl
+          dt Размер изделия	
+          div
+          dd 470х445х305мм
+        dl
+          dt Цвет
+          div
+          dd серый
+        dl
+          dt Материал
+          div
+          dd пластик
+        dl
+          dt Цвет
+          div
+          dd серый
+        dl
+          dt Материал
+          div
+          dd пластик
+
+      #features.product-tab__item-additional-features.product-small__characteristic.product-info__characteristic.product-tab__item.visually-hidden
+        h3 Дополнительные возможности
+        dl
+          dt Страна производства товара
+          div
+          dd Китай
+        dl
+          dt Размер изделия	
+          div
+          dd 470х445х305мм
+        dl
+          dt Цвет
+          div
+          dd серый
+        dl
+          dt Материал
+          div
+          dd пластик
+        dl
+          dt Цвет
+          div
+          dd серый
+        dl
+          dt Материал
+          div
+          dd пластик

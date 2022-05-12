@@ -77,3 +77,16 @@ mixin product-info()
                 dt Материал
                 div
                 dd пластик
+          +button ({
+            color: "color-transparent",
+            text: "Все характеристики",
+          }).product-info__all-features
+          .product-info__button-cart
+            +button({
+              color: "color-tangerine-yellow",
+              text: "В корзину",
+            }).product-info__cart-btn
+            .product-info__price
+              span.product-info__price-old 2 190 ₽ 
+              span.product-info__price-new 1 590 ₽
+

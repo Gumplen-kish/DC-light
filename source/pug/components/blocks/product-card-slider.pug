@@ -4,7 +4,7 @@ mixin product-card-slider()
       .product-card-slider__swiper.swiper
         ul.product-card-slider__list.swiper-wrapper
           each elem in productDataSliderHit.card
-            li.product-card-slider__item
+            li.product-card-slider__item.swiper-slide
               +product-small(elem)
 
 

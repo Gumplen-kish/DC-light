@@ -1,0 +1,11 @@
+mixin product-similar-slider()
+  .container&attributes(attributes)
+    +section-wrap(`Похожие предложения`,"Возможно вам подойдет").product-similar-slider
+      .product-similar-slider__slider-swiper.swiper
+        ul.product-similar-slider__list.swiper-wrapper
+          each elem in similarDataSlider.card
+            li.product-similar-slider__item.swiper-slide
+              +product-small(elem)
+        
+      
+

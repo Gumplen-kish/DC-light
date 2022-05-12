@@ -1,0 +1,8 @@
+mixin product-buy-slider()
+  .container&attributes(attributes)
+    +section-wrap(`С этим товаром покупают`,"Аксессуары к товару").product-buy-slider
+      .product-buy-slider__slider-swiper.swiper
+        ul.product-buy-slider__list.swiper-wrapper
+          each elem in buyDataSlider.card
+            li.product-buy-slider__item.swiper-slide
+              +product-small(elem)

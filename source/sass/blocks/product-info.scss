@@ -107,6 +107,9 @@
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     width: 600px;
   }
 
@@ -192,5 +195,43 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  &__all-features {
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  &__button-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__cart-btn {
+    padding: 18px 50px;
+    border-radius: 4px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__price-old {
+    margin-bottom: 4px;
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $color-silver;
+  }
+
+  &__price-new {
+    font-size: 36px;
+    line-height: 30px;
+    color: $color-black-pearl;
+    font-weight: 800;
   }
 }

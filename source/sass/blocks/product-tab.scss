@@ -1,0 +1,65 @@
+.product-tab {
+  margin-top: 100px;
+
+  &__btn-wrap {
+    position: relative;
+    display: flex;
+    padding-bottom: 15px;
+    gap: 70px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-whisper;
+    }
+
+    button.product-tab__btn {
+      position: relative;
+      padding: 0;
+      
+      &:hover,
+      &:active,
+      &:focus,
+      &--active {
+        color: $color-maire;
+
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: -15px;
+          width: 100%;
+          height: 4px;
+          background-color: $color-selective-yellow;
+        }
+      }
+    }
+  }
+
+
+  &__item-specifications,
+  &__item-description,
+  &__item-additional-features {
+    margin-top: 50px;
+    margin-bottom: 55px;
+
+    & h3 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 27px;
+      line-height: 37px;
+      color: $color-maire;
+      font-weight: 800;
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 24px;
+      color: $color-dim-gray;
+    }
+  }
+}

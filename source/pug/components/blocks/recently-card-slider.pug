@@ -4,5 +4,5 @@ mixin recently-card-slider(options = {})
       .recently-card-slider__swiper.swiper
         ul.recently-card-slider__list.swiper-wrapper
           each elem in productDataSliderRecently.card
-            li.recently-card-slider__item
+            li.recently-card-slider__item.swiper-slide
               +product-small(elem)
